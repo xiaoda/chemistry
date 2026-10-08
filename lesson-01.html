@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="写给成年初学者的化学第一课。从物质、原子和化学键，到反应、能量与平衡。不背口诀，先理解世界。">
+  <meta name="color-scheme" content="light">
+  <title>第一课 · 认识物质与变化｜化学，从好奇开始</title>
+  <style>:root{--paper:#f6f4eb;--card:#fcfbf6;--ink:#243b32;--body:#35453d;--muted:#647064;--green:#244d3e;--green-soft:#e6ebe0;--rust:#a74730;--line:#d8dcce;--gold:#b78c43;--body-size:18px;--serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;--sans:"Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei","PingFang SC",sans-serif;--radius:4px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--paper);color:var(--body);font-family:var(--sans);font-size:16px;line-height:1.7}button,a,summary{-webkit-tap-highlight-color:transparent}a{color:var(--green);text-underline-offset:4px}button{font:inherit;cursor:pointer}button:disabled{opacity:.38;cursor:default}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--rust);outline-offset:5px;border-radius:2px}button:focus:not(:focus-visible){outline:none}h1,h2,h3,p,figure{margin:0}h1,h2{color:var(--ink);text-wrap:balance}::selection{background:#dce4d1;color:#20372b}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.no-js .js-only{display:none!important}.skip-link{position:fixed;top:-80px;left:20px;padding:12px 20px;background:var(--green);color:white;z-index:100}.skip-link:focus{top:10px}
+.site-header{height:78px;position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 42px;background:rgba(246,244,235,.97);border-bottom:1px solid var(--line)}.brand{display:flex;gap:13px;align-items:center;text-decoration:none;font-size:19px;color:var(--ink);font-weight:700;white-space:nowrap}.brand-divider{font-weight:400;color:#9aa394;margin:0 7px}.brand-sub{font-size:15px;letter-spacing:.06em;font-weight:400}.brand-mark{display:grid;grid-template-columns:repeat(2,8px);gap:4px;transform:rotate(-9deg)}.brand-mark i{width:8px;height:8px;background:var(--green);border-radius:50%}.brand-mark i:last-child{background:var(--rust)}.header-center{font-size:13px;color:var(--muted);letter-spacing:.08em}.header-center span{margin:0 10px;color:#a5ad9e}.header-tools{display:flex;align-items:center;gap:22px}.font-tools{display:flex;align-items:center;gap:2px}.font-tools button{border:0;background:none;color:var(--green);width:38px;height:44px;font-family:Georgia,var(--sans);font-size:17px}.font-tools button:not(:disabled):hover{background:var(--green-soft)}#font-value{font-size:12px;min-width:23px;text-align:center;color:var(--muted);font-variant-numeric:tabular-nums}.print-button{display:flex;align-items:center;gap:8px;min-height:44px;border:0;background:none;color:var(--green);font-size:13px}.print-button:hover{text-decoration:underline;text-underline-offset:4px}.print-button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}.scroll-track{position:absolute;bottom:-1px;left:0;right:0;height:2px;pointer-events:none}.scroll-track span{display:block;height:100%;width:0;background:var(--rust)}
+.book-layout{max-width:1520px;margin:auto;display:grid;grid-template-columns:228px minmax(0,1fr);gap:60px;padding:0 48px 0 36px}.sidebar{min-width:0;border-right:1px solid var(--line)}.sidebar-inner{position:sticky;top:102px;max-height:calc(100dvh - 122px);overflow-y:auto;padding:14px 24px 28px 4px;scrollbar-width:thin;scrollbar-color:#cad1c2 transparent}.course-series{display:flex;gap:15px;align-items:center;text-decoration:none;margin-bottom:27px;font-size:12px;color:var(--muted)}.series-number{font-family:Georgia,serif;font-size:43px;line-height:1;color:var(--green);letter-spacing:-.04em}.series-sub{display:block;font-size:15px;color:var(--ink);font-weight:700;margin-top:3px}.completion{margin-bottom:28px}.completion>div{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted)}.completion strong{font-size:12px;font-weight:500;font-variant-numeric:tabular-nums}.completion-bar{display:block;width:100%;height:3px;margin-top:11px;appearance:none;border:0;background:#dce1d4;color:var(--green)}.completion-bar::-webkit-progress-bar{background:#dce1d4}.completion-bar::-webkit-progress-value{background:var(--green)}.completion-bar::-moz-progress-bar{background:var(--green)}.toc-group-label{font-size:10px;letter-spacing:.15em;color:var(--muted);margin:22px 0 10px;padding-left:10px}.toc-list{padding:0;margin:0;list-style:none}.toc-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:#586357;font-size:13px;line-height:1.55;min-height:39px;padding:9px 10px;margin:3px 0;border-radius:3px;border-left:2px solid transparent;transition:background .16s,color .16s}.toc-index{font-family:Georgia,serif;font-size:12px;color:#7a8475;min-width:18px}.toc-link:hover{background:#ebece1;color:var(--green)}.toc-link[aria-current="location"]{background:var(--green-soft);color:var(--green);border-left-color:var(--green);font-weight:700}.toc-link.is-complete .toc-index{color:var(--green)}.toc-link.is-complete .toc-index::after{content:"✓";margin-left:3px;font-size:9px}.toc-link.is-complete .toc-index{min-width:25px}.sidebar-note{display:flex;gap:10px;border-top:1px solid var(--line);margin-top:25px;padding:20px 6px 0}.sidebar-note p{font-size:11px;line-height:1.9;color:var(--muted)}.tiny-mark{font-size:23px;line-height:1.2;color:var(--rust)}.save-status{margin:16px 6px 0;font-size:10px;line-height:1.8;color:var(--muted)}main{min-width:0}.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,1fr);gap:40px;align-items:center;padding:70px 0 52px;min-height:540px}.eyebrow{font-size:11px;font-weight:600;letter-spacing:.16em;color:var(--green);display:flex;align-items:center;gap:9px}.eyebrow>span{display:inline-block;width:6px;height:6px;background:var(--rust);border-radius:50%}.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(42px,3.6vw,61px);line-height:1.35;letter-spacing:-.02em;margin:23px 0 19px;word-break:keep-all;overflow-wrap:normal}.title-dot{color:var(--rust)}.hero-subtitle{font-family:var(--serif);font-size:21px;line-height:1.6;color:var(--ink)}.hero-description{font-size:13px;color:var(--muted);line-height:2;margin-top:17px}.small-break{display:none}.primary-link{display:inline-flex;align-items:center;justify-content:space-between;gap:42px;margin-top:27px;background:var(--green);color:#fffef6;text-decoration:none;font-size:13px;padding:13px 20px;border-radius:2px;min-height:48px;transition:background .2s,transform .2s}.primary-link:hover{background:#173f30;transform:translateY(-2px)}.primary-link span{font-size:20px;line-height:1}.hero-meta{display:flex;align-items:center;gap:11px;margin-top:26px;font-size:10px;color:var(--muted);flex-wrap:wrap}.hero-meta i{width:2px;height:2px;border-radius:50%;background:#99a28f}.hero-figure{border:1px solid #d4d9ca;background:#eeeee2;position:relative;transform:rotate(1.5deg);box-shadow:7px 9px 0 #e9e8dc}.figure-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px 0;color:#64715f;font-size:10px;letter-spacing:.12em}.figure-cross{font-size:22px;line-height:1}.water-model{display:block;width:100%;height:auto}.hero-figure figcaption{padding:4px 20px 22px}.hero-figure figcaption strong{display:block;font-size:12px;font-weight:500;color:var(--green)}.hero-figure figcaption span{display:block;font-size:10px;margin-top:7px;color:var(--muted);line-height:1.7}.mobile-toc{display:none}.orientation{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:31px 0;display:grid;grid-template-columns:1fr 1.3fr;gap:35px;margin-bottom:62px}.orientation h2{font-family:var(--serif);font-size:22px;font-weight:500;margin:9px 0}.orientation p:not(.eyebrow){font-size:12px;line-height:1.9;color:var(--muted)}.learning-route{display:flex;justify-content:space-between;align-items:center;gap:22px;list-style:none;margin:0;padding:0}.learning-route li{position:relative;flex:1;min-width:0}.learning-route li+li:before{content:"→";position:absolute;left:-19px;top:24px;font-size:13px;color:#929e88}.learning-route span{font-family:Georgia,serif;letter-spacing:.08em;font-size:11px;color:var(--rust);display:block}.learning-route strong{display:block;font-size:15px;color:var(--ink);font-weight:500;margin:7px 0}.learning-route small{font-size:10px;color:var(--muted);display:block;line-height:1.7}
+.lesson-section{padding:0 0 58px;margin:0 0 60px;border-bottom:1px solid var(--line);scroll-margin-top:106px}.section-header{display:flex;align-items:flex-start;gap:22px;margin-bottom:28px}.section-number{font-family:Georgia,serif;font-size:48px;color:#8e9e83;line-height:1;min-width:60px;font-weight:400;letter-spacing:-.045em}.section-title-wrap{flex:1;min-width:0}.section-kicker{font-size:10px;letter-spacing:.13em;color:var(--muted);margin-bottom:7px}.section-header h2{font-family:var(--serif);font-size:clamp(25px,2.1vw,33px);font-weight:600;line-height:1.55;max-width:25em;text-wrap:pretty}.section-summary{font-size:13px;color:var(--muted);margin-top:12px}.chapter-content{margin-left:82px;max-width:720px}.prose{font-size:var(--body-size);line-height:1.95;overflow-wrap:break-word}.prose p{margin:0 0 1.1em}.prose p:last-child{margin-bottom:0}.prose h3{font-size:calc(var(--body-size) * 1.16);font-weight:700;line-height:1.65;color:var(--ink);margin:2em 0 .9em;text-wrap:pretty}.prose h4{font-size:var(--body-size);margin:1.5em 0 .6em;color:var(--ink)}.prose h3:first-child{margin-top:0}.prose strong{font-weight:700;color:#243f31}.prose ul,.prose ol{padding-left:1.4em;margin:0 0 1.2em}.prose li{padding-left:.2em;margin:.42em 0}.prose li::marker{color:#657d59}.prose li p{margin:0}.prose blockquote{margin:1.7em 0;padding:18px 22px;border-left:3px solid var(--green);background:var(--green-soft);font-family:var(--serif);font-size:calc(var(--body-size) * 1.08);line-height:1.9;color:var(--green)}.prose blockquote p{margin:0}.prose a.source-link{display:inline;color:#536e59;font-size:.75em;text-decoration:underline;text-decoration-color:#a2b19a;text-underline-offset:3px;margin-left:.35em;line-height:1.8;word-break:break-word}.prose a.source-link:after{content:" ↗"}.prose a.source-link:hover{color:var(--rust);text-decoration-color:var(--rust)}.table-wrap{max-width:100%;overflow-x:auto;margin:1.4em 0;border:1px solid var(--line);border-radius:3px}.prose table{border-collapse:collapse;width:100%;font-size:.87em;line-height:1.8;text-align:left;background:var(--card)}.prose th{background:#e7eadf;color:var(--green);font-weight:600}.prose th,.prose td{padding:15px 18px;vertical-align:top;border-bottom:1px solid var(--line)}.prose tr:last-child td{border-bottom:0}.prose td+td,.prose th+th{border-left:1px solid var(--line)}.formula{background:#edece0;border:1px solid #d8dacb;text-align:center;padding:25px 18px;border-radius:3px;font-family:Georgia,var(--sans);font-size:calc(var(--body-size) * 1.25);letter-spacing:.05em;margin:1.5em 0!important}.safety-note{border:1px solid #d8bbaa;border-left:3px solid var(--rust);background:#f5eade;padding:20px 23px;margin:1.7em 0;color:#653f2e}.safety-note h3{color:#864631;margin-top:0}.safety-note strong{color:#653f2e}.safety-note p:last-child{margin:0}.chapter-end{margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px dashed #cdd4c4;padding-top:20px}.complete-button{display:inline-flex;align-items:center;gap:9px;border:1px solid #bcc9b5;background:transparent;padding:9px 13px;border-radius:3px;color:var(--green);font-size:12px;min-height:44px;white-space:nowrap}.complete-button .check-box{display:flex;align-items:center;justify-content:center;width:15px;height:15px;border:1px solid #8fa184;border-radius:2px;font-size:10px;line-height:1}.complete-button:hover{background:var(--green-soft)}.complete-button[aria-pressed="true"]{background:var(--green-soft);border-color:#a4b498}.complete-button[aria-pressed="true"] .check-box{background:var(--green);color:white;border-color:var(--green)}.next-section{font-size:12px;text-decoration:none}.next-section:hover{text-decoration:underline}.overview-section .section-number{font-size:34px;color:var(--rust);letter-spacing:0}.overview-section .section-header h2{font-size:25px}.intro-audience{display:inline-block;font-size:11px;color:var(--green);border:1px solid #c1ccb9;padding:3px 9px;border-radius:2px;margin-bottom:20px}.noscript-notice{padding:18px;border:1px solid var(--line);margin:20px 0;font-size:14px}.inline-figure{margin:32px 0;background:#eeeee2;border:1px solid var(--line);padding:20px 20px 15px;border-radius:3px}.inline-figure svg{display:block;width:100%;height:auto}.inline-figure figcaption{font-size:11px;line-height:1.8;color:var(--muted);border-top:1px solid #d9ddcf;margin-top:14px;padding-top:12px}.figure-label{display:block;color:var(--green);font-size:10px;font-weight:600;letter-spacing:.1em;margin-bottom:12px}.inline-figure svg text{font-family:var(--sans)}.answer{border:1px solid var(--line);border-radius:3px;margin-bottom:12px;background:var(--card);overflow:hidden}.answer summary{padding:20px 50px 20px 22px;font-size:calc(var(--body-size) * .95);color:var(--ink);line-height:1.8;cursor:pointer;position:relative;list-style:none}.answer summary::-webkit-details-marker{display:none}.answer summary:after{content:"＋";position:absolute;right:20px;top:20px;color:var(--green);font-size:20px}.answer[open] summary:after{content:"−"}.answer[open] summary{background:#ebeee3}.answer .answer-body{padding:20px 22px;font-size:calc(var(--body-size) * .92);line-height:1.9}.answer-num{display:block;font-family:Georgia,serif;font-size:11px;letter-spacing:.08em;color:var(--rust);margin-bottom:5px}.answer-hint{font-size:12px;color:var(--muted);margin-bottom:23px!important}.supplement .section-number{color:var(--rust);font-size:34px;letter-spacing:0}.course-footer{padding:12px 0 25px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:end}.footer-kicker{font-size:11px;letter-spacing:.12em;color:var(--rust)}.course-footer h2{font-family:var(--serif);font-size:32px;font-weight:500;line-height:1.65;margin:15px 0}.course-footer p{font-size:13px;line-height:1.9;color:var(--muted)}.footer-actions{display:flex;flex-direction:column;gap:17px;padding-bottom:5px}.footer-actions a{font-size:12px;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:12px;display:flex;justify-content:space-between;gap:35px}.footer-actions a:hover{color:var(--rust)}.footer-bottom{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;font-size:11px!important}.footer-bottom span{font-size:10px}.hero-copy{animation:appear .65s ease both}.hero-figure{animation:figure-appear .8s ease both}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes figure-appear{from{opacity:0;transform:translateY(12px) rotate(1.5deg)}to{opacity:1;transform:translateY(0) rotate(1.5deg)}}
+@media(min-width:1600px){.book-layout{gap:82px}.hero{gap:64px;padding-top:82px;padding-bottom:64px;min-height:590px}.hero h1{font-size:62px}.chapter-content{max-width:740px}}
+@media(max-width:1200px){.book-layout{grid-template-columns:202px minmax(0,1fr);gap:36px;padding:0 30px 0 26px}.sidebar-inner{padding-right:18px}.hero{gap:22px;grid-template-columns:minmax(0,1.15fr) minmax(220px,1fr);padding-top:52px;min-height:490px}.hero h1{font-size:44px}.hero-description{font-size:12px}.hero-meta{font-size:9px;gap:7px}.hero-subtitle{font-size:19px}.orientation{grid-template-columns:1fr;gap:25px}.learning-route{max-width:560px}.chapter-content{margin-left:70px}.section-header{gap:14px}.section-number{min-width:56px}.header-center{display:none}}
+@media(max-width:960px){.site-header{padding:0 26px;height:70px}.book-layout{display:block;max-width:850px;padding:0 30px}.sidebar{display:none}.hero{min-height:510px;gap:42px;padding-top:55px}.hero h1{font-size:48px}.hero-description{font-size:13px}.hero-meta{font-size:10px}.mobile-toc{display:block;border:1px solid var(--line);background:var(--card);border-radius:3px;margin:4px 0 32px}.mobile-toc>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 20px;font-size:14px;color:var(--green);cursor:pointer;list-style:none;min-height:54px}.mobile-toc>summary::-webkit-details-marker{display:none}.mobile-toc small{font-size:10px;color:var(--muted);margin-left:8px}.mobile-toc nav{padding:0 18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.mobile-toc nav .toc-group-label{grid-column:1/-1}.mobile-toc nav .toc-list{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.mobile-toc[open]>summary>span:last-child{transform:rotate(45deg)}.orientation{grid-template-columns:1fr 1.25fr;gap:30px;padding:25px 0;margin-bottom:44px}.orientation h2{font-size:21px}.orientation p:not(.eyebrow){font-size:11px}.learning-route{gap:18px}.learning-route strong{font-size:13px}.learning-route small{font-size:9px}.chapter-content{max-width:none}.hero-figure{max-width:345px}.lesson-section{scroll-margin-top:94px}html{scroll-padding-top:94px}}
+@media(max-width:600px){:root{--body-size:18px}.site-header{height:64px;padding:0 18px;gap:9px}.brand{font-size:17px;gap:9px}.brand-sub{font-size:11px;letter-spacing:0}.brand-divider{margin:0 3px}.brand-mark{grid-template-columns:repeat(2,6px);gap:3px}.brand-mark i{width:6px;height:6px}.header-tools{gap:4px}.font-tools button{width:33px;font-size:15px}.font-tools #font-value{min-width:15px;font-size:10px}.print-button{display:none}.book-layout{padding:0 22px}.hero{display:block;padding:40px 0 34px;min-height:0}.hero h1{font-size:46px;line-height:1.4;margin:20px 0 13px}.hero-subtitle{font-size:19px}.hero-description{font-size:13px;line-height:1.95;margin-top:15px}.hero-meta{font-size:10px;gap:10px;margin-top:22px}.primary-link{margin-top:24px;padding:12px 19px;min-height:46px}.hero-figure{max-width:none;margin:34px 5px 8px;display:grid;grid-template-columns:1.15fr 1fr;align-items:center;transform:rotate(0);box-shadow:5px 6px 0 #e9e8dc;animation:none}.figure-top{grid-column:1/-1;padding:12px 14px 0;font-size:9px}.figure-cross{font-size:18px}.water-model{padding:0 0 6px 4px}.hero-figure figcaption{padding:0 16px 8px 4px}.hero-figure figcaption strong{font-size:12px;line-height:1.9}.hero-figure figcaption span{font-size:9px;line-height:1.9}.orientation{display:block;padding:24px 0;margin-bottom:40px}.orientation h2{font-size:22px}.orientation p:not(.eyebrow){font-size:12px}.learning-route{margin-top:26px;gap:22px;align-items:flex-start}.learning-route li+li:before{top:25px;left:-18px}.learning-route span{font-size:10px}.learning-route strong{font-size:13px}.learning-route small{font-size:10px;line-height:1.8}.mobile-toc{margin-bottom:29px}.mobile-toc>summary{padding:14px 15px;font-size:13px}.mobile-toc small{font-size:9px;display:block;margin:3px 0 0}.mobile-toc nav{padding:0 10px 15px}.mobile-toc nav .toc-list{grid-template-columns:1fr}.mobile-toc .toc-link{min-height:43px}.section-header{gap:13px;margin-bottom:23px}.section-number{min-width:40px;font-size:38px}.section-header h2{font-size:25px;line-height:1.55}.section-kicker{font-size:9px;margin-bottom:6px}.section-summary{font-size:12px;margin-top:10px}.chapter-content{margin-left:0}.lesson-section{padding-bottom:40px;margin-bottom:40px;scroll-margin-top:85px}.prose{line-height:1.95}.prose h3{font-size:calc(var(--body-size) * 1.08);line-height:1.7;margin-top:1.7em}.prose blockquote{padding:16px 18px;font-size:var(--body-size)}.prose a.source-link{font-size:.75em}.prose th,.prose td{padding:11px 12px}.chapter-end{gap:12px;flex-wrap:wrap}.complete-button{font-size:11px;min-height:44px}.next-section{font-size:11px}.inline-figure{padding:13px 10px 12px;margin:24px 0}.inline-figure figcaption{font-size:10px}.safety-note{padding:18px 17px}.answer summary{padding:18px 42px 18px 17px}.answer summary:after{right:14px;top:18px}.answer .answer-body{padding:17px}.course-footer{grid-template-columns:1fr;gap:25px;padding-top:0}.course-footer h2{font-size:29px}.footer-actions{max-width:260px}.footer-bottom{display:block;font-size:11px!important}.footer-bottom span{display:block;margin-top:7px;font-size:9px}.overview-section .section-number,.supplement .section-number{font-size:26px}.intro-audience{font-size:10px}html{scroll-padding-top:85px}}
+@media(max-width:359px){.book-layout{padding:0 17px}.site-header{padding:0 13px}.brand-sub{font-size:10px}.hero h1{font-size:39px}.hero-meta{gap:6px;font-size:9px}.header-tools{gap:0}.font-tools button{width:29px}.section-header h2{font-size:23px}.hero-figure figcaption strong{font-size:11px}.learning-route{gap:16px}.learning-route li+li:before{left:-15px}.learning-route strong{font-size:12px}.learning-route small{font-size:9px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+@media print{@page{size:A4;margin:18mm 16mm}html{scroll-behavior:auto}body{background:white;color:#111;font-size:11pt}.site-header,.sidebar,.mobile-toc,.orientation,.primary-link,.hero-meta,.chapter-end,.footer-actions,.skip-link,.js-only,.scroll-track,.answer-hint{display:none!important}.book-layout{display:block;max-width:none;padding:0}main{width:100%}.hero{display:block;min-height:0;padding:0 0 25px;border-bottom:1px solid #aaa;margin-bottom:25px}.hero h1{font-size:30pt;margin:12px 0}.hero h1 br{display:none}.hero-figure{display:none}.hero-subtitle{font-size:15pt}.hero-description{font-size:10pt}.eyebrow{font-size:9pt}.lesson-section{margin:0 0 24px;padding:0 0 18px;scroll-margin:0}.section-header{gap:14px;break-after:avoid;margin-bottom:16px}.section-number{font-size:27pt;min-width:40px}.section-header h2{font-size:19pt;line-height:1.5}.section-kicker{font-size:8pt}.section-summary{font-size:9pt}.chapter-content{margin:0;max-width:none}.prose{font-size:11pt;line-height:1.8}.prose h3{font-size:13pt;break-after:avoid;margin:20px 0 10px}.prose p{orphans:3;widows:3}.prose blockquote,.safety-note,.inline-figure{break-inside:avoid;background:#f1f1ed!important;print-color-adjust:exact}.prose a.source-link{font-size:8pt;color:#333}.prose table{font-size:10pt}.prose tr{break-inside:avoid}.inline-figure{max-width:480px;margin:20px auto}.inline-figure figcaption{font-size:8pt}.answer{break-inside:avoid;margin:12px 0;border:1px solid #ccc}.answer summary{font-size:11pt;padding:12px 15px;break-after:avoid}.answer summary:after{display:none}.answer .answer-body{display:block!important;font-size:10pt;padding:12px 15px}.answer::details-content{display:block;content-visibility:visible}.course-footer{display:block;padding:10px 0}.course-footer h2{font-size:19pt}.course-footer p{font-size:9pt}.footer-bottom{margin-top:20px}.source-link{overflow-wrap:anywhere}.formula{font-size:14pt}.hero-copy{animation:none}.noscript-notice{display:none}}
+
+.mobile-save-note{padding:0 20px 18px;font-size:11px;color:var(--muted);line-height:1.8}.mobile-toc b{font-weight:500;font-variant-numeric:tabular-nums}
+@media(max-width:600px){.small-break{display:block}.mobile-toc small{line-height:1.9}.mobile-save-note{padding:0 20px 18px;font-size:10px}}
+@media print{.mobile-save-note{display:none}}</style>
+</head>
+<body>
+  <a class="skip-link" href="#course">跳到课程正文</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="化学，从好奇开始，返回课程开头">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>化学<span class="brand-divider"> / </span><span class="brand-sub">从好奇开始</span></span>
+    </a>
+    <div class="header-center">成人入门课程 <span>·</span> 第一课</div>
+    <div class="header-tools">
+      <div class="font-tools js-only" role="group" aria-label="正文字号">
+        <button type="button" id="font-minus" aria-label="减小正文字号" title="减小正文字号">A−</button>
+        <span id="font-value" aria-live="polite">18</span>
+        <button type="button" id="font-plus" aria-label="增大正文字号" title="增大正文字号">A+</button>
+      </div>
+      <button type="button" class="print-button js-only" id="print-page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7z"/><path d="M16 11h1"/></svg><span>打印课程</span></button>
+    </div>
+    <div class="scroll-track" aria-hidden="true"><span id="scroll-progress"></span></div>
+  </header>
+
+  <div class="book-layout" id="top">
+    <aside class="sidebar" aria-label="课程导航">
+      <div class="sidebar-inner">
+        <a class="course-series" href="#top"><span class="series-number">01</span><span>第一课<span class="series-sub">认识物质与变化</span></span></a>
+        <div class="completion js-only"><div><span>本课学习进度</span><strong data-completion-count>0 / 10</strong></div><progress class="completion-bar" max="10" value="0" aria-label="已标记完成的小节数"></progress></div>
+        <nav aria-label="本课目录" class="toc"><p class="toc-group-label">学习准备</p><ul class="toc-list"><li><a class="toc-link" data-label="学习前的准备" href="#overview"><span class="toc-index">序</span><span>这节课怎样学</span></a></li></ul><p class="toc-group-label">十个基础小节</p><ol class="toc-list"><li><a class="toc-link" data-label="第 1 小节，认识物质" href="#chapter-01"><span class="toc-index">01</span><span>认识物质</span></a></li><li><a class="toc-link" data-label="第 2 小节，原子、元素与粒子" href="#chapter-02"><span class="toc-index">02</span><span>原子、元素与粒子</span></a></li><li><a class="toc-link" data-label="第 3 小节，化学键与结构" href="#chapter-03"><span class="toc-index">03</span><span>化学键与结构</span></a></li><li><a class="toc-link" data-label="第 4 小节，状态、溶解与混合" href="#chapter-04"><span class="toc-index">04</span><span>状态、溶解与混合</span></a></li><li><a class="toc-link" data-label="第 5 小节，反应与质量守恒" href="#chapter-05"><span class="toc-index">05</span><span>反应与质量守恒</span></a></li><li><a class="toc-link" data-label="第 6 小节，摩尔与浓度" href="#chapter-06"><span class="toc-index">06</span><span>摩尔与浓度</span></a></li><li><a class="toc-link" data-label="第 7 小节，能量与反应速度" href="#chapter-07"><span class="toc-index">07</span><span>能量与反应速度</span></a></li><li><a class="toc-link" data-label="第 8 小节，动态平衡" href="#chapter-08"><span class="toc-index">08</span><span>动态平衡</span></a></li><li><a class="toc-link" data-label="第 9 小节，酸和碱" href="#chapter-09"><span class="toc-index">09</span><span>酸和碱</span></a></li><li><a class="toc-link" data-label="第 10 小节，氧化还原" href="#chapter-10"><span class="toc-index">10</span><span>氧化还原</span></a></li></ol><p class="toc-group-label">理解与应用</p><ul class="toc-list"><li><a class="toc-link" data-label="两个生活观察" href="#observations"><span class="toc-index">观</span><span>两个生活观察</span></a></li><li><a class="toc-link" data-label="五道理解自测" href="#self-check"><span class="toc-index">问</span><span>五道理解自测</span></a></li><li><a class="toc-link" data-label="把基础带进生活" href="#next-steps"><span class="toc-index">续</span><span>把基础带进生活</span></a></li></ul></nav>
+        <div class="sidebar-note"><span class="tiny-mark" aria-hidden="true">↗</span><p>不必一次读完。<br>理解一个问题，就向前一步。</p></div>
+        <p class="save-status js-only" id="storage-status" data-storage-status>进度仅保存在当前浏览器，不会上传。</p>
+      </div>
+    </aside>
+
+    <main id="course">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> 第一课 · 化学基础</p>
+          <h1 id="hero-title">重新认识<br>物质的世界<span class="title-dot">。</span></h1>
+          <p class="hero-subtitle">从“物质是什么”，<br class="small-break">到“变化为什么发生”。</p>
+          <p class="hero-description">写给有好奇心、但基础薄弱的成年人。<br>不急着记住答案，先试着理解原因。</p>
+          <a class="primary-link" href="#chapter-01" id="start-link">开始第一小节 <span aria-hidden="true">↗</span></a>
+          <div class="hero-meta"><span>10 个基础小节</span><i></i><span>2 个生活观察</span><i></i><span>5 道理解自测</span></div>
+        </div>
+        <figure class="hero-figure">
+          <div class="figure-top"><span>微观视角 / 001</span><span class="figure-cross" aria-hidden="true">＋</span></div>
+          <svg class="water-model" viewBox="0 0 380 300" role="img" aria-labelledby="water-title water-desc">
+            <title id="water-title">一个水分子的组成</title>
+            <desc id="water-desc">一个氧原子与两个氢原子通过化学键连接，形成水分子。示意图不按实际比例。</desc>
+            <defs><pattern id="dot-grid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#c4c5b9"/></pattern></defs>
+            <rect width="380" height="300" fill="url(#dot-grid)"/>
+            <circle cx="190" cy="152" r="116" fill="none" stroke="#cbcfc2" stroke-dasharray="3 6"/>
+            <path d="M190 120 98 190M190 120 282 190" fill="none" stroke="#b9b7a6" stroke-width="15" stroke-linecap="round"/>
+            <path d="M190 120 98 190M190 120 282 190" fill="none" stroke="#e0ddce" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="190" cy="120" r="51" fill="#ad513a"/><circle cx="190" cy="120" r="43" fill="none" stroke="#c87560"/>
+            <circle cx="98" cy="190" r="32" fill="#fbf9ee" stroke="#416054" stroke-width="1.5"/>
+            <circle cx="282" cy="190" r="32" fill="#fbf9ee" stroke="#416054" stroke-width="1.5"/>
+            <text x="190" y="133" text-anchor="middle" font-family="Georgia,serif" font-size="40" fill="#fffaf0">O</text>
+            <text x="98" y="200" text-anchor="middle" font-family="Georgia,serif" font-size="29" fill="#284c40">H</text>
+            <text x="282" y="200" text-anchor="middle" font-family="Georgia,serif" font-size="29" fill="#284c40">H</text>
+            <path d="M245 98h59" stroke="#8c9487"/><text x="306" y="102" font-size="12" fill="#59675d">氧</text>
+            <path d="M66 207 45 228H24" fill="none" stroke="#8c9487"/><text x="27" y="247" font-size="12" fill="#59675d">氢</text>
+            <text x="190" y="273" text-anchor="middle" font-family="Georgia,serif" font-size="22" letter-spacing="2" fill="#284c40">H₂O</text>
+          </svg>
+          <figcaption><strong>平常的一滴水，也有微观的秩序。</strong><span>2 个氢原子 + 1 个氧原子 · 结构示意，不按比例</span></figcaption>
+        </figure>
+      </section>
+
+      <details class="mobile-toc" id="mobile-toc"><summary><span>本课目录 <small>10 个小节 + 观察与自测<span class="js-only"> · 已完成 <b data-completion-count>0 / 10</b></span></small></span><span aria-hidden="true">＋</span></summary><nav aria-label="移动端本课目录"><p class="toc-group-label">学习准备</p><ul class="toc-list"><li><a class="toc-link" data-label="学习前的准备" href="#overview"><span class="toc-index">序</span><span>这节课怎样学</span></a></li></ul><p class="toc-group-label">十个基础小节</p><ol class="toc-list"><li><a class="toc-link" data-label="第 1 小节，认识物质" href="#chapter-01"><span class="toc-index">01</span><span>认识物质</span></a></li><li><a class="toc-link" data-label="第 2 小节，原子、元素与粒子" href="#chapter-02"><span class="toc-index">02</span><span>原子、元素与粒子</span></a></li><li><a class="toc-link" data-label="第 3 小节，化学键与结构" href="#chapter-03"><span class="toc-index">03</span><span>化学键与结构</span></a></li><li><a class="toc-link" data-label="第 4 小节，状态、溶解与混合" href="#chapter-04"><span class="toc-index">04</span><span>状态、溶解与混合</span></a></li><li><a class="toc-link" data-label="第 5 小节，反应与质量守恒" href="#chapter-05"><span class="toc-index">05</span><span>反应与质量守恒</span></a></li><li><a class="toc-link" data-label="第 6 小节，摩尔与浓度" href="#chapter-06"><span class="toc-index">06</span><span>摩尔与浓度</span></a></li><li><a class="toc-link" data-label="第 7 小节，能量与反应速度" href="#chapter-07"><span class="toc-index">07</span><span>能量与反应速度</span></a></li><li><a class="toc-link" data-label="第 8 小节，动态平衡" href="#chapter-08"><span class="toc-index">08</span><span>动态平衡</span></a></li><li><a class="toc-link" data-label="第 9 小节，酸和碱" href="#chapter-09"><span class="toc-index">09</span><span>酸和碱</span></a></li><li><a class="toc-link" data-label="第 10 小节，氧化还原" href="#chapter-10"><span class="toc-index">10</span><span>氧化还原</span></a></li></ol><p class="toc-group-label">理解与应用</p><ul class="toc-list"><li><a class="toc-link" data-label="两个生活观察" href="#observations"><span class="toc-index">观</span><span>两个生活观察</span></a></li><li><a class="toc-link" data-label="五道理解自测" href="#self-check"><span class="toc-index">问</span><span>五道理解自测</span></a></li><li><a class="toc-link" data-label="把基础带进生活" href="#next-steps"><span class="toc-index">续</span><span>把基础带进生活</span></a></li></ul></nav><p class="mobile-save-note js-only" data-storage-status>进度仅保存在当前浏览器，不会上传。</p></details>
+
+      <section class="orientation" id="outline" aria-labelledby="outline-title">
+        <div class="orientation-heading"><p class="eyebrow">本课路线</p><h2 id="outline-title">先搭起框架，再看懂现象。</h2><p>原教程的十讲，收录为第一课的十个小节。<br>按顺序阅读，也可以从目录回到感兴趣的问题。</p></div>
+        <ol class="learning-route">
+          <li><span>01—03</span><strong>它是什么</strong><small>物质 → 粒子 → 结构</small></li>
+          <li><span>04—06</span><strong>它怎样变化</strong><small>状态 → 反应 → 数量</small></li>
+          <li><span>07—10</span><strong>为什么会这样</strong><small>能量 → 平衡 → 反应类型</small></li>
+        </ol>
+      </section>
+
+      <noscript><p class="noscript-notice">当前未开启 JavaScript。全部课程、目录和自测解析仍可阅读；进度记录和字号按钮不可用。打印可使用浏览器菜单。</p></noscript>
+      <section class="lesson-section overview-section" id="overview" aria-labelledby="overview-title"><header class="section-header"><span class="section-number" aria-hidden="true">序</span><div class="section-title-wrap"><p class="section-kicker">开始之前</p><h2 id="overview-title">这节课，怎样学才有用？</h2></div></header><div class="chapter-content prose"><p>写给有好奇心、但基础薄弱的成年人</p>
+<p>这份教程从基础开始。生活中的例子用来帮助理解，不会把它写成一堆清洁、做饭的小窍门。</p>
+<p>你不需要先背元素周期表，也不需要记住很多方程式。但有几个基础概念值得慢慢弄懂，因为它们能反复解释不同的现象。</p>
+<p><strong>学习目标不是“记得多少”，而是逐渐能回答：</strong></p>
+<ul>
+<li>眼前的东西由什么组成？</li>
+<li>为什么它有这样的性质？</li>
+<li>它发生变化时，究竟什么变了？</li>
+<li>改变条件，会有什么不同？</li>
+<li>一个听起来很科学的说法，证据够不够？</li>
+</ul>
+<p>建议每次读一两个小节。遇到公式，先读懂它在表达什么，不用背。</p></div></section>
+      <section class="lesson-section" id="chapter-01" data-chapter="1" aria-labelledby="chapter-01-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">01</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 1 小节</p><h2 id="chapter-01-title">先认识“物质”，而不是先认识公式</h2><p class="section-summary">从一只玻璃杯开始，分清“看起来是什么”和“实际由什么组成”。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>拿起一个玻璃杯。</p>
+<p>“杯子”是物品的名称，告诉你它的用途；“玻璃”是材料的名称，告诉你它由哪类物质构成。</p>
+<p>化学会继续问：这种玻璃有哪些成分？这些成分怎样结合？为什么透明、坚硬，却又容易碎？</p>
+<p><strong>化学主要研究物质的组成、结构、性质，以及它们怎样变化。</strong></p>
+<h3>1. 看起来一样，不代表是同一种物质</h3>
+<p>食盐和白糖都是白色晶体，但它们不是同一种物质。</p>
+<p>反过来，冰、水和水蒸气看起来差别很大，却都可以是同一种物质：水。</p>
+<p>因此，判断一种东西是什么，不能只靠颜色、形状和状态。</p>
+<h3>2. 先分清纯净物和混合物</h3>
+<ul>
+<li><strong>纯净物</strong>：由一种化学物质组成，例如理想情况下的纯水、纯氧气。</li>
+<li><strong>混合物</strong>：含有多种物质，例如空气、茶水、牛奶。</li>
+</ul>
+<p>这里的“纯净”，不是“卫生”“健康”或“安全”的意思，只是在说组成。</p>
+<p>同样，混合物也不代表脏。我们接触的大多数食物、材料和商品，本来就是混合物。</p>
+<h3>这一节值得留下的问题</h3>
+<p>一杯水清澈透明，能证明里面只有水吗？</p>
+<p>不能。许多溶解在水里的物质，肉眼根本看不出来。</p>
+<p><strong>化学学习的起点，是承认“看见了什么”和“实际有什么”不是一回事。</strong></p></div><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-01" aria-pressed="false" aria-label="标记第 1 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-02">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-02" data-chapter="2" aria-labelledby="chapter-02-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">02</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 2 小节</p><h2 id="chapter-02-title">把镜头拉近——原子、元素、分子和离子</h2><p class="section-summary">四个常见名词，分别回答四个不同的问题。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>这些名词经常让人觉得化学难，其实它们分别回答不同的问题。</p>
+<h3>1. 原子：构成普通物质的基本单元之一</h3>
+<p>原子有原子核，周围分布着电子。</p>
+<p>你现在只需要知道两件事：</p>
+<ul>
+<li>原子核中的<strong>质子数</strong>，决定它是哪一种元素。</li>
+<li><strong>电子</strong>带负电，深度参与原子之间的结合和化学变化。</li>
+</ul>
+<p>普通化学反应主要涉及电子与原子间连接方式的变化，不会把原子核随意改造成另一种元素。</p>
+<p>所以，化学反应可以把铁变成铁锈，但不能把铁变成黄金。</p>
+<h3>2. 元素：原子的“种类”</h3>
+<p>氢、氧、碳、铁，都是元素的名称。</p>
+<p>“氧元素”指的是一类原子；“氧气”则是一种具体物质。这两个词不是同一个层次。</p>
+<p>水里含有氧元素，不意味着水里藏着许多氧气小气泡。</p>
+<h3>3. 分子：一些原子结合成的独立整体</h3>
+<p>例如：</p>
+<ul>
+<li>一个水分子，由两个氢原子和一个氧原子组成，写成 <strong>H₂O</strong>。</li>
+<li>一个氧气分子，由两个氧原子组成，写成 <strong>O₂</strong>。</li>
+<li>一个二氧化碳分子，由一个碳原子和两个氧原子组成，写成 <strong>CO₂</strong>。</li>
+</ul>
+<p>右下角的小数字，是在说明一个分子里有几个对应的原子。</p>
+<p><strong>化学式首先是一种简写，不是需要背诵的咒语。</strong></p>
+<h3>4. 离子：带电的原子或原子团</h3>
+<p>原子失去或得到电子后，可以成为带电的离子：</p>
+<ul>
+<li>失去带负电的电子，往往成为正离子。</li>
+<li>得到电子，往往成为负离子。</li>
+</ul>
+<p>食盐中的主要粒子是钠离子和氯离子。它们在固体中有规律地排列，不是一个个独立的“食盐分子”。NaCl 表达的是钠离子与氯离子的数量比为 1∶1。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.acs.org/middleschoolchemistry/lessonplans/chapter5/lesson3.html">美国化学会：水为什么能溶解食盐</a></p>
+<h3>把几个概念连起来</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>例子</th>
+<th>从组成上看</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>氧气 O₂</td>
+<td>只含一种元素的纯净物，叫单质</td>
+</tr>
+<tr>
+<td>水 H₂O</td>
+<td>含有不同元素的纯净物，叫化合物</td>
+</tr>
+<tr>
+<td>盐水</td>
+<td>水和溶解的盐共同组成的混合物</td>
+</tr>
+</tbody>
+</table></div>
+<p>注意：<strong>“含有两种元素”和“混着两种物质”不是一回事。</strong></p>
+<p>水不是氢气和氧气的简单混合物。它是原子以另一种方式结合后形成的物质，性质也完全不同。</p></div><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-02" aria-pressed="false" aria-label="标记第 2 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-03">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-03" data-chapter="3" aria-labelledby="chapter-03-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">03</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 3 小节</p><h2 id="chapter-03-title">原子怎样结合？为什么“结构”这么重要？</h2><p class="section-summary">成分相同，连接和排列不同，性质也可能大不一样。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>原子不是随便堆在一起的。它们之间存在与电子有关的相互作用，可以形成相对稳定的结构。</p>
+<p>把原子或离子结合起来的重要相互作用，称为<strong>化学键</strong>。</p>
+<p>先认识三种基本情况，不需要背定义。</p>
+<h3>1. 共享电子：共价键</h3>
+<p>水分子中，氢和氧通过共享电子形成连接。</p>
+<p>这里的“共享”不一定平均。不同原子吸引电子的能力不同，电子可能更偏向其中一方。</p>
+<h3>2. 正负电荷相互吸引：离子键</h3>
+<p>食盐中，带正电的钠离子和带负电的氯离子相互吸引，形成延伸的晶体结构。</p>
+<h3>3. 电子可以在整体中活动：金属键</h3>
+<p>在金属里，有些电子不局限于某两个原子之间，而能在金属整体中运动。这有助于解释金属为什么通常能够导电。</p>
+<h3>最值得理解的区别：分子内部连接，与分子之间吸引</h3>
+<p>烧水时，水变成水蒸气，主要是水分子彼此分开。</p>
+<p><strong>不是把 H₂O 拆成氢气和氧气。</strong></p>
+<p>可以粗略想象：</p>
+<ul>
+<li>分子内部的化学键，把一个个整体连接起来。</li>
+<li>分子之间的作用，让这些整体以不同方式聚集。</li>
+</ul>
+<p>这个区别，能帮助你理解蒸发、融化、溶解，以及之后的化学反应。</p>
+<h3>为什么结构重要？</h3>
+<p>钻石和石墨都由碳元素构成，性质却很不一样，因为碳原子的连接和排列方式不同。</p>
+<p>因此，仅知道“含有什么成分”，往往还不够。</p>
+<p>还要问：</p>
+<blockquote>
+<p><strong>这些成分以什么形态存在？怎样连接？怎样排列？</strong></p>
+</blockquote>
+<p>这也是为什么看到商品宣传“含某种元素”，不能立刻判断它有什么功能。</p></div><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-03" aria-pressed="false" aria-label="标记第 3 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-04">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-04" data-chapter="4" aria-labelledby="chapter-04-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">04</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 4 小节</p><h2 id="chapter-04-title">物质里面一直在动——状态、溶解与混合</h2><p class="section-summary">看不见，不代表不存在；溶得快，也不代表能溶得更多。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>桌上的水看起来静止，里面的粒子却没有停止运动。</p>
+<h3>1. 固体、液体、气体的差别</h3>
+<p>可以先这样理解：</p>
+<ul>
+<li><strong>固体</strong>：粒子通常在相对固定的位置附近振动。</li>
+<li><strong>液体</strong>：粒子仍然靠得较近，但能够改变相对位置。</li>
+<li><strong>气体</strong>：粒子之间距离通常大得多，能够在空间中运动。</li>
+</ul>
+<p>加热通常会增强粒子的热运动。但发生熔化、沸腾时，输入的能量也会用于改变粒子间的组织状态，温度不一定持续上升。</p>
+<h3>2. 糖溶于水，是糖消失了吗？</h3>
+<p>没有。</p>
+<p>糖晶体中的蔗糖分子彼此分开，分散到水中。普通条件下，溶解并没有把蔗糖分子拆成碳、氢、氧原子。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.acs.org/middleschoolchemistry/lessonplans/chapter5/lesson4.html">美国化学会：水为什么能溶解糖</a></p>
+<p>也就是说：</p>
+<blockquote>
+<p>看不到糖粒了，不代表糖不存在；它只是以肉眼看不到的尺度分散了。</p>
+</blockquote>
+<h3>3. 为什么水能溶糖，却很难和油均匀混合？</h3>
+<p>水分子内部的电荷分布不均匀，一侧略偏负，另一侧略偏正，这叫<strong>极性</strong>。</p>
+<p>注意：它整体仍然不带电，不等于离子。</p>
+<p>糖分子有能与水产生较强相互作用的部位；油的主要分子结构则不同，通常不容易与水形成均匀溶液。</p>
+<p>洗洁精中的表面活性剂，同时具有容易与水、与油相互作用的部分，能够帮助油分散，并随水被带走。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.acs.org/content/dam/acsorg/education/outreach/celebrating-chemistry/2002-ncw-celebrating-chemistry-english.pdf">美国化学会：油、水与洗涤剂</a></p>
+<h3>4. 必须区分：溶得快，与最终能溶多少</h3>
+<p>搅拌可以让糖更快溶解。</p>
+<p>但在相同温度、相同水量下，搅拌通常不会改变最终能够溶解的最大量。</p>
+<p>前者是<strong>速度</strong>，后者涉及<strong>溶解度</strong>。</p>
+<p>这两个问题经常被混淆：</p>
+<ul>
+<li>“一分钟内溶解得更多。”</li>
+<li>“无论等多久，最终都能溶解得更多。”</li>
+</ul>
+<p>它们不是同一个结论。</p></div><figure class="inline-figure"><span class="figure-label">把镜头拉近 / 物质的三种状态</span><svg viewBox="0 0 584 204" role="img" aria-labelledby="states-title"><title id="states-title">固体、液体和气体中粒子排列的简化对比，固体粒子并非静止不动</title><g transform="translate(8,0)"><rect x="0" y="0" width="172" height="147" rx="3" fill="#f9f8f0" stroke="#ccd3c0"/><circle cx="44" cy="63" r="7" fill="#4e735b"/><circle cx="64" cy="63" r="7" fill="#4e735b"/><circle cx="84" cy="63" r="7" fill="#4e735b"/><circle cx="104" cy="63" r="7" fill="#4e735b"/><circle cx="44" cy="83" r="7" fill="#4e735b"/><circle cx="64" cy="83" r="7" fill="#4e735b"/><circle cx="84" cy="83" r="7" fill="#4e735b"/><circle cx="104" cy="83" r="7" fill="#4e735b"/><circle cx="44" cy="103" r="7" fill="#4e735b"/><circle cx="64" cy="103" r="7" fill="#4e735b"/><circle cx="84" cy="103" r="7" fill="#4e735b"/><circle cx="104" cy="103" r="7" fill="#4e735b"/><text x="86" y="173" text-anchor="middle" font-size="16" fill="#294b3b">固体</text><text x="86" y="195" text-anchor="middle" font-size="12" fill="#66715f">相对固定的位置</text></g><g transform="translate(204,0)"><rect x="0" y="0" width="172" height="147" rx="3" fill="#f9f8f0" stroke="#ccd3c0"/><circle cx="29" cy="109" r="7" fill="#4e735b"/><circle cx="49" cy="105" r="7" fill="#4e735b"/><circle cx="70" cy="109" r="7" fill="#4e735b"/><circle cx="91" cy="106" r="7" fill="#4e735b"/><circle cx="114" cy="109" r="7" fill="#4e735b"/><circle cx="39" cy="86" r="7" fill="#4e735b"/><circle cx="61" cy="89" r="7" fill="#4e735b"/><circle cx="84" cy="85" r="7" fill="#4e735b"/><circle cx="106" cy="88" r="7" fill="#4e735b"/><circle cx="55" cy="67" r="7" fill="#4e735b"/><circle cx="78" cy="66" r="7" fill="#4e735b"/><circle cx="99" cy="66" r="7" fill="#4e735b"/><text x="86" y="173" text-anchor="middle" font-size="16" fill="#294b3b">液体</text><text x="86" y="195" text-anchor="middle" font-size="12" fill="#66715f">相邻但可以流动</text></g><g transform="translate(400,0)"><rect x="0" y="0" width="172" height="147" rx="3" fill="#f9f8f0" stroke="#ccd3c0"/><circle cx="22" cy="36" r="7" fill="#4e735b"/><circle cx="65" cy="23" r="7" fill="#4e735b"/><circle cx="124" cy="34" r="7" fill="#4e735b"/><circle cx="47" cy="64" r="7" fill="#4e735b"/><circle cx="94" cy="53" r="7" fill="#4e735b"/><circle cx="132" cy="79" r="7" fill="#4e735b"/><circle cx="24" cy="95" r="7" fill="#4e735b"/><circle cx="72" cy="97" r="7" fill="#4e735b"/><circle cx="107" cy="119" r="7" fill="#4e735b"/><circle cx="145" cy="119" r="7" fill="#4e735b"/><circle cx="41" cy="125" r="7" fill="#4e735b"/><circle cx="143" cy="19" r="7" fill="#4e735b"/><text x="86" y="173" text-anchor="middle" font-size="16" fill="#294b3b">气体</text><text x="86" y="195" text-anchor="middle" font-size="12" fill="#66715f">分散在更大空间</text></g></svg><figcaption>每幅图都画了 12 个粒子。位置与间距只帮助理解，不代表真实比例或运动轨迹；固体粒子也在振动。</figcaption></figure><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-04" aria-pressed="false" aria-label="标记第 4 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-05">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-05" data-chapter="5" aria-labelledby="chapter-05-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">05</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 5 小节</p><h2 id="chapter-05-title">化学反应究竟改变了什么？</h2><p class="section-summary">连接方式改变了，原子的种类和数量仍然对得上。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>冰融化、糖溶于水，与铁生锈有什么不同？</p>
+<p>前两种变化中，水和糖的化学身份没有改变；铁生锈则生成了新的物质。</p>
+<p><strong>化学反应涉及原子的连接方式、电子分布等发生改变，从而形成不同的化学物种。</strong></p>
+<h3>1. 原子重新组合，不是凭空出现或消失</h3>
+<p>看一个只用于理解的模型：</p>
+<p class="formula"><strong>2H₂ + O₂ → 2H₂O</strong></p>
+<p>读成中文：</p>
+<p>两个氢分子，与一个氧分子反应，生成两个水分子。</p>
+<p>数一数：</p>
+<ul>
+<li>左边有四个氢原子、两个氧原子。</li>
+<li>右边也有四个氢原子、两个氧原子。</li>
+</ul>
+<p>原子的种类和数量没有变，组合方式变了。</p>
+<p>这里不安排氢气或点火实验。</p>
+<h3>2. 为什么不能随意修改化学式的小数字？</h3>
+<p>把 H₂O 改成 H₂O₂，就不再是同一种物质。</p>
+<p>而把 H₂O 写成 <strong>2H₂O</strong>，只是表示两个水分子，或相应比例的物质的量。</p>
+<p>可以把它理解为：</p>
+<ul>
+<li><strong>下标</strong>说明一个整体的组成。</li>
+<li><strong>前面的系数</strong>说明有多少份这样的整体。</li>
+</ul>
+<p>配平方程式，本质上是核对原子数量，不是玩数字游戏。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.acs.org/middleschoolchemistry/simulations/chapter6/lesson2.html">美国化学会：反应中的原子与质量守恒</a></p>
+<h3>3. 质量为什么有时看起来减少了？</h3>
+<p>如果反应产生的气体跑到空气中，只称容器里的剩余物，质量当然可能减少。</p>
+<p>如果把所有进入和离开的物质都计入，普通化学反应满足质量守恒。</p>
+<p>所以，研究一件事之前，先说清楚：</p>
+<blockquote>
+<p><strong>我们把哪些东西算进来了？哪些东西没有算？</strong></p>
+</blockquote>
+<h3>一个容易误判的地方</h3>
+<p>冒泡、变色、发热，都可以是化学变化的线索，但不能单凭其中一项下结论。</p>
+<p>例如，水沸腾会冒泡，却没有因此生成新的物质。</p></div><figure class="inline-figure"><span class="figure-label">不是咒语，是一本粒子账本</span>
+<svg viewBox="0 0 590 144" role="img" aria-labelledby="balance-title"><title id="balance-title">两个氢分子加一个氧分子生成两个水分子，两侧都是四个氢原子和两个氧原子</title>
+<rect x="5" y="8" width="244" height="121" rx="3" fill="#f9f8f0" stroke="#ccd3c0"/><rect x="340" y="8" width="244" height="121" rx="3" fill="#f9f8f0" stroke="#ccd3c0"/>
+<text x="127" y="39" text-anchor="middle" font-size="12" fill="#65705e">反应前</text><text x="462" y="39" text-anchor="middle" font-size="12" fill="#65705e">反应后</text>
+<text x="127" y="77" text-anchor="middle" font-size="28" fill="#254b3c">2H₂ + O₂</text><text x="462" y="77" text-anchor="middle" font-size="28" fill="#254b3c">2H₂O</text>
+<text x="127" y="109" text-anchor="middle" font-size="13" fill="#8d4633">4 个 H · 2 个 O</text><text x="462" y="109" text-anchor="middle" font-size="13" fill="#8d4633">4 个 H · 2 个 O</text>
+<path d="M273 68h42l-8-7m8 7-8 7" fill="none" stroke="#617b56" stroke-width="2"/></svg>
+<figcaption>变的是组合方式，不变的是每种原子的数量。这里只读懂模型，不进行氢气或点火实验。</figcaption></figure><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-05" aria-pressed="false" aria-label="标记第 5 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-06">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-06" data-chapter="6" aria-labelledby="chapter-06-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">06</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 6 小节</p><h2 id="chapter-06-title">化学里的数量——摩尔和浓度为什么有用？</h2><p class="section-summary">不为计算而计算，只为把“多少”说清楚。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>你可以不喜欢计算，但理解“数量关系”很有价值。</p>
+<h3>1. 化学反应按粒子数量配合，不是按相同重量配合</h3>
+<p>一个大球和一个小球，数量相同，重量不同。</p>
+<p>分子也是如此。</p>
+<p>刚才的反应需要两个氢分子配一个氧分子，并不意味着需要两克氢气配一克氧气。</p>
+<p>问题是：分子太小，怎么数？</p>
+<h3>2. 摩尔：把巨量粒子按“份”计数</h3>
+<p>“一打”表示十二个。</p>
+<p>“一摩尔”也表示一个规定的数量，只不过约为 <strong>6.02×10²³ 个指定粒子</strong>。</p>
+<p>这个数字不用背。你只需要理解：</p>
+<blockquote>
+<p><strong>摩尔把微观粒子的数量，与宏观上能够称量的质量联系起来。</strong></p>
+</blockquote>
+<p>例如，通过原子量可以算出：</p>
+<ul>
+<li>一摩尔水分子的质量约为十八克。</li>
+<li>两摩尔水分子的质量约为三十六克。</li>
+</ul>
+<p>它不是额外发明一道难题，而是为了解决“无法一个个数分子”的实际困难。</p>
+<p>第一遍读到这里，理解用途就够了。</p>
+<h3>3. 浓度：必须看清楚分母</h3>
+<p>把十克糖加入九十克水中，得到一百克糖水。</p>
+<p>糖的质量分数是：</p>
+<p class="formula"><strong>10 克 ÷ 100 克 = 10%</strong></p>
+<p>如果把十克糖加入一百克水中，得到的是一百一十克糖水，就不是 10%。</p>
+<p>这类计算最重要的不是技巧，而是问清：</p>
+<blockquote>
+<p>“百分之几”，究竟是占谁的百分之几？</p>
+</blockquote>
+<h3>4. 浓度，与总量是两回事</h3>
+<p>假设饮料标签写：</p>
+<p>每一百毫升含糖八克。</p>
+<p>一瓶五百毫升，全部喝完就是四十克糖。</p>
+<p>“每一百毫升看起来不多”和“整瓶总量不多”，不是同一个判断。</p>
+<p>更一般地说，讨论一种物质的影响，要考虑它是什么、接触多少、通过什么途径、持续多久，以及现有证据与不确定性。不能只看名字，也不能只看是否“检出”。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.epa.gov/risk/conducting-human-health-risk-assessment">美国环保署：风险评估的基本组成</a></p></div><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-06" aria-pressed="false" aria-label="标记第 6 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-07">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-07" data-chapter="7" aria-labelledby="chapter-07-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">07</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 7 小节</p><h2 id="chapter-07-title">反应的能量与速度，是两个问题</h2><p class="section-summary">能不能发生、发生得多快、效果好不好，要分开讨论。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>为什么有些反应会放热，却不会立刻发生？</p>
+<p>理解这个问题，需要分开两件事：</p>
+<ol>
+<li>反应前后，能量怎样变化？</li>
+<li>反应过程，需要跨过什么障碍？</li>
+</ol>
+<h3>1. 打断化学键需要能量，形成化学键会释放能量</h3>
+<p>常见误解是：</p>
+<p>“燃料里的化学键一断开，就把能量放出来了。”</p>
+<p>更准确的说法是：</p>
+<ul>
+<li>断开旧键需要吸收能量。</li>
+<li>形成新键会释放能量。</li>
+<li>比较整个过程的收支，才能判断净放热还是净吸热。</li>
+</ul>
+<p>燃烧放热，不是因为“断键本身放热”，而是整个反应过程有净能量释放。</p>
+<h3>2. 能放热，不代表马上反应</h3>
+<p>反应过程中通常存在一个需要跨越的能量障碍，称为<strong>活化能</strong>。</p>
+<p>粗略类比：即使目的地比出发点低，途中仍可能先要翻过一道坡。</p>
+<p>这个类比只帮助理解障碍，不代表分子真的在爬山。</p>
+<h3>3. 催化剂做了什么？</h3>
+<p>催化剂提供另一条反应途径，使反应更容易进行。它参与过程，并在完整的催化循环中再生。</p>
+<p>它不是额外提供无限能量的东西，也不是把不可能的事情变成任何条件下都可能。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://openstax.org/books/chemistry-2e/pages/12-7-catalysis">OpenStax：催化作用</a></p>
+<h3>这为什么实用？</h3>
+<p>遇到一个反应或处理过程不理想，可以分别问：</p>
+<ul>
+<li>温度是否合适？</li>
+<li>参与反应的物质能否充分接触？</li>
+<li>是否需要更长时间？</li>
+<li>是否存在合适的催化途径？</li>
+</ul>
+<p>但不要把它简化为“温度越高越好”。更高的温度也可能带来不希望发生的反应，或者损坏材料。</p>
+<p><strong>“能发生”“发生得快”“效果好”，是三个不同的判断。</strong></p></div><figure class="inline-figure"><span class="figure-label">反应示意 / 换一条更容易走的路</span>
+<svg viewBox="0 0 590 257" role="img" aria-labelledby="energy-title"><title id="energy-title">催化与未催化反应能量示意。两条路径有相同的起点和终点，催化路径的能垒较低</title>
+<path d="M54 22v196h488" fill="none" stroke="#939e88" stroke-width="1.2"/>
+<text x="14" y="28" font-size="12" fill="#66735e">能量</text><text x="476" y="246" font-size="12" fill="#66735e">反应进程 →</text>
+<path d="M68 143h46C173 143 185 39 267 39S348 190 432 190h81" fill="none" stroke="#a6533d" stroke-width="3"/>
+<path d="M68 143h46C175 143 196 96 265 96S347 190 432 190h81" fill="none" stroke="#426b4e" stroke-width="3" stroke-dasharray="7 4"/>
+<text x="333" y="48" font-size="13" fill="#9b4732">未催化路径</text><text x="287" y="109" font-size="13" fill="#315d40">催化路径</text>
+<text x="69" y="166" font-size="12" fill="#596852">反应物</text><text x="463" y="181" font-size="12" fill="#596852">产物</text>
+<circle cx="69" cy="143" r="4" fill="#33543d"/><circle cx="512" cy="190" r="4" fill="#33543d"/>
+</svg><figcaption>以一个放热反应作定性示意：催化路径的能垒较低，起点和终点不变。曲线不是实测数据，横轴也不是时间。</figcaption></figure><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-07" aria-pressed="false" aria-label="标记第 7 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-08">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-08" data-chapter="8" aria-labelledby="chapter-08-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">08</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 8 小节</p><h2 id="chapter-08-title">平衡不等于停止——为什么汽水会跑气？</h2><p class="section-summary">宏观上没有变化，微观过程却可能一直在继续。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>打开汽水，气泡出现。</p>
+<p>这些气体不是开瓶时凭空生成的。原来已有二氧化碳溶解在液体中。</p>
+<h3>1. 微观上，两个方向可以同时发生</h3>
+<p>在密闭、条件稳定的体系中：</p>
+<ul>
+<li>有二氧化碳从液体进入上方气体。</li>
+<li>也有二氧化碳从气体进入液体。</li>
+</ul>
+<p>当两个方向的速率相等时，宏观上的量可以保持稳定。</p>
+<p>这叫<strong>动态平衡</strong>。</p>
+<p>“动态”的意思是过程仍然在发生；“平衡”的意思是两个方向的变化相互抵消。</p>
+<h3>2. 改变条件，原有平衡会改变</h3>
+<p>开瓶后，上方二氧化碳的分压降低，原来能够留在液体里的部分二氧化碳逸出。</p>
+<p>对于汽水，在相同二氧化碳分压下，较低温度通常有利于保留更多溶解的二氧化碳。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.acs.org/middleschoolchemistry/lessonplans/chapter5/lesson8.html">美国化学会：气体能溶于水吗</a></p>
+<p>所以，及时盖好、冷藏，有助于减少继续跑气，但不能把已经散入室内空气的二氧化碳全部找回来。</p>
+<h3>3. 化学反应也可能达到动态平衡</h3>
+<p>一些反应能够向两个方向进行。平衡时，不是反应物和产物必须一样多，而是正、逆反应速率相等。</p>
+<p>催化剂能帮助体系更快达到平衡，却不会改变同一温度下的平衡常数。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle">OpenStax：平衡与催化剂</a></p>
+<p>这再次说明：</p>
+<blockquote>
+<p><strong>改变速度，不一定改变最终结果。</strong></p>
+</blockquote></div><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-08" aria-pressed="false" aria-label="标记第 8 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-09">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-09" data-chapter="9" aria-labelledby="chapter-09-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">09</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 9 小节</p><h2 id="chapter-09-title">酸和碱——不是危险等级，也不是健康评分</h2><p class="section-summary">理解酸碱性，也理解一个指标能说明什么、不能说明什么。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>先采用一个适合入门的模型：</p>
+<ul>
+<li><strong>酸</strong>能够把氢离子 H⁺ 转移给其他物质。</li>
+<li><strong>碱</strong>能够接受氢离子。</li>
+</ul>
+<p>这里的 H⁺ 在水中会与水分子结合，不是孤零零地漂着；入门时常用 H⁺ 作为简写。</p>
+<h3>1. pH 表示什么？</h3>
+<p>pH 是描述溶液酸碱性的一种指标。</p>
+<p>对于接近 25℃ 的常见水溶液：</p>
+<ul>
+<li>pH 小于 7，呈酸性。</li>
+<li>pH 等于 7，呈中性。</li>
+<li>pH 大于 7，呈碱性。</li>
+</ul>
+<p>它不是普通的等差刻度。对于常见稀水溶液，pH 每降低一，氢离子浓度大约增加十倍。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh">OpenStax：pH</a></p>
+<p>不用现在学习对数计算，先知道“差一点点”可能不是“小差别”。</p>
+<h3>2. “强酸”“浓酸”“pH 低”不是同一个意思</h3>
+<ul>
+<li><strong>强弱</strong>：在指定环境中，酸转移氢离子的倾向。</li>
+<li><strong>浓稀</strong>：加入了多少酸，占多大比例。</li>
+<li><strong>pH</strong>：这份具体溶液的酸碱状态。</li>
+</ul>
+<p>所以，不能把“弱酸”直接理解成“任何浓度都安全”。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://openstax.org/books/chemistry/pages/14-3-relative-strengths-of-acids-and-bases">OpenStax：酸碱强弱</a></p>
+<h3>3. 为什么醋和小苏打会冒泡？</h3>
+<p>醋中的醋酸与小苏打反应，生成乙酸钠、水和二氧化碳。气泡主要来自二氧化碳。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.acs.org/middleschoolchemistry/lessonplans/chapter6/lesson2.html">美国化学会：醋与小苏打的反应</a></p>
+<p>由此可以推断：把两者预先混在一起，会消耗掉一部分酸和碱，不能仅凭“泡沫很热闹”就断定清洁能力更强。</p>
+<p>这不是说它们在所有情境下毫无作用，而是：</p>
+<p><strong>反应明显，与达成清洁目标，不是同一个指标。</strong></p>
+<aside class="safety-note"><h3>必须记住的安全边界</h3>
+<p>不自行混用清洁剂。尤其不要把含氯漂白剂与醋、酸性洁厕剂、含氨产品或其他清洁消毒产品混用，应按标签操作并保持通风。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html">美国疾控中心：漂白剂使用安全</a></p>
+<p>化学基础能帮助理解风险，但不能替代产品说明书。</p>
+</aside></div><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-09" aria-pressed="false" aria-label="标记第 9 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#chapter-10">下一个小节 <span aria-hidden="true">→</span></a></div></div></section>
+<section class="lesson-section" id="chapter-10" data-chapter="10" aria-labelledby="chapter-10-title">
+<header class="section-header"><span class="section-number" aria-hidden="true">10</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 第 10 小节</p><h2 id="chapter-10-title">氧化还原——从生锈到电池</h2><p class="section-summary">在生锈与电池之间，找到电子转移这条共同线索。</p></div></header>
+<div class="chapter-content"><div class="prose"><p>“氧化”容易让人以为一定有氧气参与。</p>
+<p>现代化学中，更一般的入门理解是：</p>
+<ul>
+<li><strong>失去电子：氧化。</strong></li>
+<li><strong>得到电子：还原。</strong></li>
+</ul>
+<p>两者相互关联：一方失去的电子，需要被另一方接受。</p>
+<h3>1. 铁为什么生锈？</h3>
+<p>在常见潮湿环境中，铁表面会发生电化学过程：</p>
+<ul>
+<li>某些位置的铁失去电子。</li>
+<li>另一些位置发生接受电子的反应。</li>
+<li>后续变化形成铁锈。</li>
+</ul>
+<p>普通铁锈通常不能像完整保护膜那样可靠地保护内部金属，因此腐蚀可能继续。</p>
+<p>涂层隔开水和氧、不锈钢形成保护性表面膜，都是不同的防护思路。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://openstax.org/books/chemistry-2e/pages/17-6-corrosion">OpenStax：腐蚀与防护</a></p>
+<h3>2. 电池与此有什么关系？</h3>
+<p>电池把氧化、还原过程安排在不同的位置，并让电子通过外部电路流动，从而向设备供能；内部还需要离子迁移来维持电荷平衡。</p>
+<p>所以，电池不是简单装着一袋“电”。它包含能够进行能量转换的化学体系。</p>
+<p>可充电电池可以在合适条件下，利用外部电能驱动相应的逆向过程。但并不是所有电池都能安全充电，也不是每次变化都能完全恢复。</p>
+<p>不通过拆解、短路、加热电池来验证这些原理。</p>
+<h3>这一节带来的联系</h3>
+<p>生锈与电池看起来相距很远，却都涉及电子转移。</p>
+<p>化学基础的价值就在这里：<strong>你不再只能记住一个个孤立的现象，而能发现它们共有的机制。</strong></p></div><div class="chapter-end"><button class="complete-button js-only" type="button" data-complete="chapter-10" aria-pressed="false" aria-label="标记第 10 小节已完成"><span class="check-box" aria-hidden="true"></span><span class="button-label">标记本节已完成</span></button><a class="next-section" href="#observations">去做两个小观察 <span aria-hidden="true">→</span></a></div></div></section>
+      <section class="lesson-section supplement" id="observations" aria-labelledby="observations-title"><header class="section-header"><span class="section-number" aria-hidden="true">观</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 理解与应用</p><h2 id="observations-title">两个不需要化学试剂的小观察</h2><p class="section-summary">不追求热闹效果，练习区分现象与结论。</p></div></header><div class="chapter-content prose"><p>目的不是做出漂亮效果，而是练习：<strong>先预测，再观察，最后限制结论。</strong></p>
+<h3>观察一：搅拌到底改变了什么？</h3>
+<p>准备两个相同杯子，分别加入等量、同温度的水，再放入等量、颗粒相近的白糖。</p>
+<ul>
+<li>一杯搅拌。</li>
+<li>一杯不搅拌。</li>
+<li>比较糖粒消失的速度。</li>
+</ul>
+<p>通常搅拌的一杯更快。</p>
+<p>但这个实验只能支持“搅拌改变了溶解速度”，不能证明“搅拌提高了最终溶解上限”。</p>
+<p>如果结果不明显，先检查水量、温度、糖量是否一致，不必强迫现象符合预期。</p>
+<h3>观察二：油是被消灭了，还是被分散了？</h3>
+<p>两个透明杯子里分别加入约五十毫升水和几滴食用油。</p>
+<ul>
+<li>一杯不加其他东西。</li>
+<li>另一杯加入一滴普通手洗餐具用洗洁精。</li>
+<li>用相近方式轻轻搅拌，静置比较。</li>
+</ul>
+<p>加洗洁精的一杯通常更容易形成细小油滴，分层也可能变慢，但未必永久稳定。</p>
+<p>这个观察不能证明“油被化学分解了”。更合理的解释是，它被分散成了更小的部分。</p>
+<aside class="safety-note"><p><strong>两项观察都不品尝试验液，不混入其他清洁剂，避免溅眼，结束后清洗器具和双手。</strong></p></aside></div></section>
+<section class="lesson-section supplement" id="self-check" aria-labelledby="self-check-title"><header class="section-header"><span class="section-number" aria-hidden="true">问</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 理解与应用</p><h2 id="self-check-title">怎样知道自己真的开始理解了？</h2><p class="section-summary">先用自己的话回答，再展开看看理解要点。</p></div></header><div class="chapter-content prose"><p>不考名词背诵。试着解释下面五件事：</p><p class="answer-hint">点击问题展开理解要点；不计分，也不需要背诵。</p><span class="sr-only">问题 理解要点</span><details class="answer"><summary><span class="answer-num">问题 01 / 05</span>烧开水为什么不是在制造氢气和氧气？</summary><div class="answer-body">主要改变分子间的聚集状态，没有拆开水分子中的化学键。</div></details><details class="answer"><summary><span class="answer-num">问题 02 / 05</span>糖水透明，为什么不代表糖不存在？</summary><div class="answer-body">糖以分子尺度分散，肉眼看不到。</div></details><details class="answer"><summary><span class="answer-num">问题 03 / 05</span>两种产品含同一种元素，性质为什么可能不同？</summary><div class="answer-body">元素相同，不代表化学形态、结构、浓度相同。</div></details><details class="answer"><summary><span class="answer-num">问题 04 / 05</span>反应加快，为什么不一定得到更多最终产物？</summary><div class="answer-body">速度与平衡结果是不同问题。</div></details><details class="answer"><summary><span class="answer-num">问题 05 / 05</span>清洁时污渍“消失”了，还应该追问什么？</summary><div class="answer-body">它进入了水、空气、抹布，还是转化成了其他物质？</div></details><p>能用自己的话说出大意，比复述标准答案更重要。</p></div></section>
+<section class="lesson-section supplement" id="next-steps" aria-labelledby="next-steps-title"><header class="section-header"><span class="section-number" aria-hidden="true">续</span><div class="section-title-wrap"><p class="section-kicker">第一课 / 理解与应用</p><h2 id="next-steps-title">学完这些基础，下一步学什么？</h2><p class="section-summary">选择一个真正让你好奇的方向，继续往下走。</p></div></header><div class="chapter-content prose"><p>不必马上进入更难的题目。可以选一个你真正在意的方向：</p>
+<ul>
+<li><strong>食品与烹饪</strong>：蛋白质的形状、淀粉、乳化、褐变和发酵。</li>
+<li><strong>材料</strong>：金属、玻璃、陶瓷、塑料为什么有不同性能。</li>
+<li><strong>能源</strong>：燃烧、电池、储能，以及能量转换的限制。</li>
+<li><strong>环境</strong>：分离与分解有什么区别，污染物最终去了哪里。</li>
+</ul>
+<p>例如，塑料常涉及长链状的高分子；链的结构、排列和连接方式，会影响材料性能。这是在继续使用第 3 小节的“结构影响性质”，而不是另学一套毫不相关的知识。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://www.acs.org/education/resources/undergraduate/chemistryincontext/interactives/world-of-polymers-and-plastics.html">美国化学会：高分子与塑料</a></p>
+<p>再如，看到“可降解”三个字，可以追问：在什么环境、经过多久、分解到什么程度？工业堆肥条件下能降解，不代表扔进海里也会迅速消失。<a class="source-link" target="_blank" rel="noopener noreferrer" href="https://wedocs.unep.org/bitstream/handle/20.500.11822/42277/Plastic_pollution.pdf?sequence=3">联合国环境规划署：塑料降解与处理条件</a></p>
+<p><strong>你现在不需要知道所有答案。先学会把问题问具体：是什么物质、什么结构、多少数量、什么条件、变成了什么、证据是什么。</strong></p>
+<p>这就是一套能够继续生长的化学基础。</p></div></section>
+
+      <footer class="course-footer">
+        <div><span class="footer-kicker">第一课 · 读到这里</span><h2>带着一个更好的问题，<br>回到日常生活。</h2><p>不必记住所有名词。下次遇到一个现象，<br>试着问：它是什么，在什么条件下，变成了什么？</p></div>
+        <div class="footer-actions"><a href="data:text/markdown;charset=utf-8;base64,IyDljJblrablhaXpl6jvvJrku47igJznianotKjmmK/ku4DkuYjigJ3liLDigJzlj5jljJbkuLrku4DkuYjlj5HnlJ/igJ0KIyMjIOWGmee7meacieWlveWlh+W/g+OAgeS9huWfuuehgOiWhOW8seeahOaIkOW5tOS6ugoK6L+Z5Lu95pWZ56iL5LuO5Z+656GA5byA5aeL44CC55Sf5rS75Lit55qE5L6L5a2Q55So5p2l5biu5Yqp55CG6Kej77yM5LiN5Lya5oqK5a6D5YaZ5oiQ5LiA5aCG5riF5rSB44CB5YGa6aWt55qE5bCP56qN6Zeo44CCCgrkvaDkuI3pnIDopoHlhYjog4zlhYPntKDlkajmnJ/ooajvvIzkuZ/kuI3pnIDopoHorrDkvY/lvojlpJrmlrnnqIvlvI/jgILkvYbmnInlh6DkuKrln7rnoYDmpoLlv7XlgLzlvpfmhaLmhaLlvITmh4LvvIzlm6DkuLrlroPku6zog73lj43lpI3op6Pph4rkuI3lkIznmoTnjrDosaHjgIIKCioq5a2m5Lmg55uu5qCH5LiN5piv4oCc6K6w5b6X5aSa5bCR4oCd77yM6ICM5piv6YCQ5riQ6IO95Zue562U77yaKioKLSDnnLzliY3nmoTkuJzopb/nlLHku4DkuYjnu4TmiJDvvJ8KLSDkuLrku4DkuYjlroPmnInov5nmoLfnmoTmgKfotKjvvJ8KLSDlroPlj5HnlJ/lj5jljJbml7bvvIznqbbnq5/ku4DkuYjlj5jkuobvvJ8KLSDmlLnlj5jmnaHku7bvvIzkvJrmnInku4DkuYjkuI3lkIzvvJ8KLSDkuIDkuKrlkKzotbfmnaXlvojnp5HlrabnmoTor7Tms5XvvIzor4Hmja7lpJ/kuI3lpJ/vvJ8KCuW7uuiuruavj+asoeivu+S4gOS4pOiusuOAgumBh+WIsOWFrOW8j++8jOWFiOivu+aHguWug+WcqOihqOi+vuS7gOS5iO+8jOS4jeeUqOiDjOOAggoKLS0tCgojIyDnrKzkuIDorrLvvJrlhYjorqTor4bigJznianotKjigJ3vvIzogIzkuI3mmK/lhYjorqTor4blhazlvI8KCuaLv+i1t+S4gOS4queOu+eSg+adr+OAggoK4oCc5p2v5a2Q4oCd5piv54mp5ZOB55qE5ZCN56ew77yM5ZGK6K+J5L2g5a6D55qE55So6YCU77yb4oCc546755KD4oCd5piv5p2Q5paZ55qE5ZCN56ew77yM5ZGK6K+J5L2g5a6D55Sx5ZOq57G754mp6LSo5p6E5oiQ44CCCgrljJblrabkvJrnu6fnu63pl67vvJrov5nnp43njrvnkoPmnInlk6rkupvmiJDliIbvvJ/ov5nkupvmiJDliIbmgI7moLfnu5PlkIjvvJ/kuLrku4DkuYjpgI/mmI7jgIHlnZrnoazvvIzljbTlj4jlrrnmmJPnoo7vvJ8KCioq5YyW5a2m5Li76KaB56CU56m254mp6LSo55qE57uE5oiQ44CB57uT5p6E44CB5oCn6LSo77yM5Lul5Y+K5a6D5Lus5oCO5qC35Y+Y5YyW44CCKioKCiMjIyAxLiDnnIvotbfmnaXkuIDmoLfvvIzkuI3ku6PooajmmK/lkIzkuIDnp43nianotKgKCumjn+ebkOWSjOeZveezlumDveaYr+eZveiJsuaZtuS9k++8jOS9huWug+S7rOS4jeaYr+WQjOS4gOenjeeJqei0qOOAggoK5Y+N6L+H5p2l77yM5Yaw44CB5rC05ZKM5rC06JK45rCU55yL6LW35p2l5beu5Yir5b6I5aSn77yM5Y206YO95Y+v5Lul5piv5ZCM5LiA56eN54mp6LSo77ya5rC044CCCgrlm6DmraTvvIzliKTmlq3kuIDnp43kuJzopb/mmK/ku4DkuYjvvIzkuI3og73lj6rpnaDpopzoibLjgIHlvaLnirblkoznirbmgIHjgIIKCiMjIyAyLiDlhYjliIbmuIXnuq/lh4Dnianlkozmt7flkIjniakKCi0gKirnuq/lh4DniakqKu+8mueUseS4gOenjeWMluWtpueJqei0qOe7hOaIkO+8jOS+i+WmgueQhuaDs+aDheWGteS4i+eahOe6r+awtOOAgee6r+awp+awlOOAggotICoq5re35ZCI54mpKirvvJrlkKvmnInlpJrnp43nianotKjvvIzkvovlpoLnqbrmsJTjgIHojLbmsLTjgIHniZvlpbbjgIIKCui/memHjOeahOKAnOe6r+WHgOKAne+8jOS4jeaYr+KAnOWNq+eUn+KAneKAnOWBpeW6t+KAneaIluKAnOWuieWFqOKAneeahOaEj+aAne+8jOWPquaYr+WcqOivtOe7hOaIkOOAggoK5ZCM5qC377yM5re35ZCI54mp5Lmf5LiN5Luj6KGo6ISP44CC5oiR5Lus5o6l6Kem55qE5aSn5aSa5pWw6aOf54mp44CB5p2Q5paZ5ZKM5ZWG5ZOB77yM5pys5p2l5bCx5piv5re35ZCI54mp44CCCgojIyMg6L+Z5LiA6K6y5YC85b6X55WZ5LiL55qE6Zeu6aKYCgrkuIDmna/msLTmuIXmvojpgI/mmI7vvIzog73or4HmmI7ph4zpnaLlj6rmnInmsLTlkJfvvJ8KCuS4jeiDveOAguiuuOWkmua6tuino+WcqOawtOmHjOeahOeJqei0qO+8jOiCieecvOagueacrOeci+S4jeWHuuadpeOAggoKKirljJblrablrabkuaDnmoTotbfngrnvvIzmmK/mib/orqTigJznnIvop4Hkuobku4DkuYjigJ3lkozigJzlrp7pmYXmnInku4DkuYjigJ3kuI3mmK/kuIDlm57kuovjgIIqKgoKLS0tCgojIyDnrKzkuozorrLvvJrmiorplZzlpLTmi4nov5HigJTigJTljp/lrZDjgIHlhYPntKDjgIHliIblrZDlkoznprvlrZAKCui/meS6m+WQjeivjee7j+W4uOiuqeS6uuinieW+l+WMluWtpumavu+8jOWFtuWunuWug+S7rOWIhuWIq+WbnuetlOS4jeWQjOeahOmXrumimOOAggoKIyMjIDEuIOWOn+WtkO+8muaehOaIkOaZrumAmueJqei0qOeahOWfuuacrOWNleWFg+S5i+S4gAoK5Y6f5a2Q5pyJ5Y6f5a2Q5qC477yM5ZGo5Zu05YiG5biD552A55S15a2Q44CCCgrkvaDnjrDlnKjlj6rpnIDopoHnn6XpgZPkuKTku7bkuovvvJoKCi0g5Y6f5a2Q5qC45Lit55qEKirotKjlrZDmlbAqKu+8jOWGs+WumuWug+aYr+WTquS4gOenjeWFg+e0oOOAggotICoq55S15a2QKirluKbotJ/nlLXvvIzmt7Hluqblj4LkuI7ljp/lrZDkuYvpl7TnmoTnu5PlkIjlkozljJblrablj5jljJbjgIIKCuaZrumAmuWMluWtpuWPjeW6lOS4u+imgea2ieWPiueUteWtkOS4juWOn+WtkOmXtOi/nuaOpeaWueW8j+eahOWPmOWMlu+8jOS4jeS8muaKiuWOn+WtkOaguOmaj+aEj+aUuemAoOaIkOWPpuS4gOenjeWFg+e0oOOAggoK5omA5Lul77yM5YyW5a2m5Y+N5bqU5Y+v5Lul5oqK6ZOB5Y+Y5oiQ6ZOB6ZSI77yM5L2G5LiN6IO95oqK6ZOB5Y+Y5oiQ6buE6YeR44CCCgojIyMgMi4g5YWD57Sg77ya5Y6f5a2Q55qE4oCc56eN57G74oCdCgrmsKLjgIHmsKfjgIHnorPjgIHpk4HvvIzpg73mmK/lhYPntKDnmoTlkI3np7DjgIIKCuKAnOawp+WFg+e0oOKAneaMh+eahOaYr+S4gOexu+WOn+WtkO+8m+KAnOawp+awlOKAneWImeaYr+S4gOenjeWFt+S9k+eJqei0qOOAgui/meS4pOS4quivjeS4jeaYr+WQjOS4gOS4quWxguasoeOAggoK5rC06YeM5ZCr5pyJ5rCn5YWD57Sg77yM5LiN5oSP5ZGz552A5rC06YeM6JeP552A6K645aSa5rCn5rCU5bCP5rCU5rOh44CCCgojIyMgMy4g5YiG5a2Q77ya5LiA5Lqb5Y6f5a2Q57uT5ZCI5oiQ55qE54us56uL5pW05L2TCgrkvovlpoLvvJoKCi0g5LiA5Liq5rC05YiG5a2Q77yM55Sx5Lik5Liq5rCi5Y6f5a2Q5ZKM5LiA5Liq5rCn5Y6f5a2Q57uE5oiQ77yM5YaZ5oiQICoqSOKCgk8qKuOAggotIOS4gOS4quawp+awlOWIhuWtkO+8jOeUseS4pOS4quawp+WOn+WtkOe7hOaIkO+8jOWGmeaIkCAqKk/igoIqKuOAggotIOS4gOS4quS6jOawp+WMlueis+WIhuWtkO+8jOeUseS4gOS4queis+WOn+WtkOWSjOS4pOS4quawp+WOn+WtkOe7hOaIkO+8jOWGmeaIkCAqKkNP4oKCKirjgIIKCuWPs+S4i+inkueahOWwj+aVsOWtl++8jOaYr+WcqOivtOaYjuS4gOS4quWIhuWtkOmHjOacieWHoOS4quWvueW6lOeahOWOn+WtkOOAggoKKirljJblrablvI/pppblhYjmmK/kuIDnp43nroDlhpnvvIzkuI3mmK/pnIDopoHog4zor7XnmoTlkpLor63jgIIqKgoKIyMjIDQuIOemu+WtkO+8muW4pueUteeahOWOn+WtkOaIluWOn+WtkOWbogoK5Y6f5a2Q5aSx5Y675oiW5b6X5Yiw55S15a2Q5ZCO77yM5Y+v5Lul5oiQ5Li65bim55S155qE56a75a2Q77yaCgotIOWkseWOu+W4pui0n+eUteeahOeUteWtkO+8jOW+gOW+gOaIkOS4uuato+emu+WtkOOAggotIOW+l+WIsOeUteWtkO+8jOW+gOW+gOaIkOS4uui0n+emu+WtkOOAggoK6aOf55uQ5Lit55qE5Li76KaB57KS5a2Q5piv6ZKg56a75a2Q5ZKM5rCv56a75a2Q44CC5a6D5Lus5Zyo5Zu65L2T5Lit5pyJ6KeE5b6L5Zyw5o6S5YiX77yM5LiN5piv5LiA5Liq5Liq54us56uL55qE4oCc6aOf55uQ5YiG5a2Q4oCd44CCTmFDbCDooajovr7nmoTmmK/pkqDnprvlrZDkuI7msK/nprvlrZDnmoTmlbDph4/mr5TkuLogMeKItjHjgIJb576O5Zu95YyW5a2m5Lya77ya5rC05Li65LuA5LmI6IO95rq26Kej6aOf55uQXShodHRwczovL3d3dy5hY3Mub3JnL21pZGRsZXNjaG9vbGNoZW1pc3RyeS9sZXNzb25wbGFucy9jaGFwdGVyNS9sZXNzb24zLmh0bWwpCgojIyMg5oqK5Yeg5Liq5qaC5b+16L+e6LW35p2lCgp8IOS+i+WtkCB8IOS7jue7hOaIkOS4iueciyB8CnwtLS18LS0tfAp8IOawp+awlCBP4oKCIHwg5Y+q5ZCr5LiA56eN5YWD57Sg55qE57qv5YeA54mp77yM5Y+r5Y2V6LSoIHwKfCDmsLQgSOKCgk8gfCDlkKvmnInkuI3lkIzlhYPntKDnmoTnuq/lh4DnianvvIzlj6vljJblkIjniakgfAp8IOebkOawtCB8IOawtOWSjOa6tuino+eahOebkOWFseWQjOe7hOaIkOeahOa3t+WQiOeJqSB8Cgrms6jmhI/vvJoqKuKAnOWQq+acieS4pOenjeWFg+e0oOKAneWSjOKAnOa3t+edgOS4pOenjeeJqei0qOKAneS4jeaYr+S4gOWbnuS6i+OAgioqCgrmsLTkuI3mmK/msKLmsJTlkozmsKfmsJTnmoTnroDljZXmt7flkIjnianjgILlroPmmK/ljp/lrZDku6Xlj6bkuIDnp43mlrnlvI/nu5PlkIjlkI7lvaLmiJDnmoTnianotKjvvIzmgKfotKjkuZ/lrozlhajkuI3lkIzjgIIKCi0tLQoKIyMg56ys5LiJ6K6y77ya5Y6f5a2Q5oCO5qC357uT5ZCI77yf5Li65LuA5LmI4oCc57uT5p6E4oCd6L+Z5LmI6YeN6KaB77yfCgrljp/lrZDkuI3mmK/pmo/kvr/loIblnKjkuIDotbfnmoTjgILlroPku6zkuYvpl7TlrZjlnKjkuI7nlLXlrZDmnInlhbPnmoTnm7jkupLkvZznlKjvvIzlj6/ku6XlvaLmiJDnm7jlr7nnqLPlrprnmoTnu5PmnoTjgIIKCuaKiuWOn+WtkOaIluemu+WtkOe7k+WQiOi1t+adpeeahOmHjeimgeebuOS6kuS9nOeUqO+8jOensOS4uioq5YyW5a2m6ZSuKirjgIIKCuWFiOiupOivhuS4ieenjeWfuuacrOaDheWGte+8jOS4jemcgOimgeiDjOWumuS5ieOAggoKIyMjIDEuIOWFseS6q+eUteWtkO+8muWFseS7t+mUrgoK5rC05YiG5a2Q5Lit77yM5rCi5ZKM5rCn6YCa6L+H5YWx5Lqr55S15a2Q5b2i5oiQ6L+e5o6l44CCCgrov5nph4znmoTigJzlhbHkuqvigJ3kuI3kuIDlrprlubPlnYfjgILkuI3lkIzljp/lrZDlkLjlvJXnlLXlrZDnmoTog73lipvkuI3lkIzvvIznlLXlrZDlj6/og73mm7TlgY/lkJHlhbbkuK3kuIDmlrnjgIIKCiMjIyAyLiDmraPotJ/nlLXojbfnm7jkupLlkLjlvJXvvJrnprvlrZDplK4KCumjn+ebkOS4re+8jOW4puato+eUteeahOmSoOemu+WtkOWSjOW4pui0n+eUteeahOawr+emu+WtkOebuOS6kuWQuOW8le+8jOW9ouaIkOW7tuS8uOeahOaZtuS9k+e7k+aehOOAggoKIyMjIDMuIOeUteWtkOWPr+S7peWcqOaVtOS9k+S4rea0u+WKqO+8mumHkeWxnumUrgoK5Zyo6YeR5bGe6YeM77yM5pyJ5Lqb55S15a2Q5LiN5bGA6ZmQ5LqO5p+Q5Lik5Liq5Y6f5a2Q5LmL6Ze077yM6ICM6IO95Zyo6YeR5bGe5pW05L2T5Lit6L+Q5Yqo44CC6L+Z5pyJ5Yqp5LqO6Kej6YeK6YeR5bGe5Li65LuA5LmI6YCa5bi46IO95aSf5a+855S144CCCgojIyMg5pyA5YC85b6X55CG6Kej55qE5Yy65Yir77ya5YiG5a2Q5YaF6YOo6L+e5o6l77yM5LiO5YiG5a2Q5LmL6Ze05ZC45byVCgrng6fmsLTml7bvvIzmsLTlj5jmiJDmsLTokrjmsJTvvIzkuLvopoHmmK/msLTliIblrZDlvbzmraTliIblvIDjgIIKCioq5LiN5piv5oqKIEjigoJPIOaLhuaIkOawouawlOWSjOawp+awlOOAgioqCgrlj6/ku6XnspfnlaXmg7PosaHvvJoKCi0g5YiG5a2Q5YaF6YOo55qE5YyW5a2m6ZSu77yM5oqK5LiA5Liq5Liq5pW05L2T6L+e5o6l6LW35p2l44CCCi0g5YiG5a2Q5LmL6Ze055qE5L2c55So77yM6K6p6L+Z5Lqb5pW05L2T5Lul5LiN5ZCM5pa55byP6IGa6ZuG44CCCgrov5nkuKrljLrliKvvvIzog73luK7liqnkvaDnkIbop6Pokrjlj5HjgIHono3ljJbjgIHmurbop6PvvIzku6Xlj4rkuYvlkI7nmoTljJblrablj43lupTjgIIKCiMjIyDkuLrku4DkuYjnu5PmnoTph43opoHvvJ8KCumSu+efs+WSjOefs+WiqOmDveeUseeis+WFg+e0oOaehOaIkO+8jOaAp+i0qOWNtOW+iOS4jeS4gOagt++8jOWboOS4uueis+WOn+WtkOeahOi/nuaOpeWSjOaOkuWIl+aWueW8j+S4jeWQjOOAggoK5Zug5q2k77yM5LuF55+l6YGT4oCc5ZCr5pyJ5LuA5LmI5oiQ5YiG4oCd77yM5b6A5b6A6L+Y5LiN5aSf44CCCgrov5jopoHpl67vvJoKCj4gKirov5nkupvmiJDliIbku6Xku4DkuYjlvaLmgIHlrZjlnKjvvJ/mgI7moLfov57mjqXvvJ/mgI7moLfmjpLliJfvvJ8qKgoK6L+Z5Lmf5piv5Li65LuA5LmI55yL5Yiw5ZWG5ZOB5a6j5Lyg4oCc5ZCr5p+Q56eN5YWD57Sg4oCd77yM5LiN6IO956uL5Yi75Yik5pat5a6D5pyJ5LuA5LmI5Yqf6IO944CCCgotLS0KCiMjIOesrOWbm+iusu+8mueJqei0qOmHjOmdouS4gOebtOWcqOWKqOKAlOKAlOeKtuaAgeOAgea6tuino+S4jua3t+WQiAoK5qGM5LiK55qE5rC055yL6LW35p2l6Z2Z5q2i77yM6YeM6Z2i55qE57KS5a2Q5Y205rKh5pyJ5YGc5q2i6L+Q5Yqo44CCCgojIyMgMS4g5Zu65L2T44CB5ray5L2T44CB5rCU5L2T55qE5beu5YirCgrlj6/ku6XlhYjov5nmoLfnkIbop6PvvJoKCi0gKirlm7rkvZMqKu+8mueykuWtkOmAmuW4uOWcqOebuOWvueWbuuWumueahOS9jee9rumZhOi/keaMr+WKqOOAggotICoq5ray5L2TKirvvJrnspLlrZDku43nhLbpnaDlvpfovoPov5HvvIzkvYbog73lpJ/mlLnlj5jnm7jlr7nkvY3nva7jgIIKLSAqKuawlOS9kyoq77ya57KS5a2Q5LmL6Ze06Led56a76YCa5bi45aSn5b6X5aSa77yM6IO95aSf5Zyo56m66Ze05Lit6L+Q5Yqo44CCCgrliqDng63pgJrluLjkvJrlop7lvLrnspLlrZDnmoTng63ov5DliqjjgILkvYblj5HnlJ/nhpTljJbjgIHmsrjohb7ml7bvvIzovpPlhaXnmoTog73ph4/kuZ/kvJrnlKjkuo7mlLnlj5jnspLlrZDpl7TnmoTnu4Tnu4fnirbmgIHvvIzmuKnluqbkuI3kuIDlrprmjIHnu63kuIrljYfjgIIKCiMjIyAyLiDns5bmurbkuo7msLTvvIzmmK/ns5bmtojlpLHkuoblkJfvvJ8KCuayoeacieOAggoK57OW5pm25L2T5Lit55qE6JSX57OW5YiG5a2Q5b285q2k5YiG5byA77yM5YiG5pWj5Yiw5rC05Lit44CC5pmu6YCa5p2h5Lu25LiL77yM5rq26Kej5bm25rKh5pyJ5oqK6JSX57OW5YiG5a2Q5ouG5oiQ56Kz44CB5rCi44CB5rCn5Y6f5a2Q44CCW+e+juWbveWMluWtpuS8mu+8muawtOS4uuS7gOS5iOiDvea6tuino+ezll0oaHR0cHM6Ly93d3cuYWNzLm9yZy9taWRkbGVzY2hvb2xjaGVtaXN0cnkvbGVzc29ucGxhbnMvY2hhcHRlcjUvbGVzc29uNC5odG1sKQoK5Lmf5bCx5piv6K+077yaCgo+IOeci+S4jeWIsOezlueykuS6hu+8jOS4jeS7o+ihqOezluS4jeWtmOWcqO+8m+Wug+WPquaYr+S7peiCieecvOeci+S4jeWIsOeahOWwuuW6puWIhuaVo+S6huOAggoKIyMjIDMuIOS4uuS7gOS5iOawtOiDvea6tuezlu+8jOWNtOW+iOmavuWSjOayueWdh+WMgOa3t+WQiO+8nwoK5rC05YiG5a2Q5YaF6YOo55qE55S16I235YiG5biD5LiN5Z2H5YyA77yM5LiA5L6n55Wl5YGP6LSf77yM5Y+m5LiA5L6n55Wl5YGP5q2j77yM6L+Z5Y+rKirmnoHmgKcqKuOAggoK5rOo5oSP77ya5a6D5pW05L2T5LuN54S25LiN5bim55S177yM5LiN562J5LqO56a75a2Q44CCCgrns5bliIblrZDmnInog73kuI7msLTkuqfnlJ/ovoPlvLrnm7jkupLkvZznlKjnmoTpg6jkvY3vvJvmsrnnmoTkuLvopoHliIblrZDnu5PmnoTliJnkuI3lkIzvvIzpgJrluLjkuI3lrrnmmJPkuI7msLTlvaLmiJDlnYfljIDmurbmtrLjgIIKCua0l+a0geeyvuS4reeahOihqOmdoua0u+aAp+WJgu+8jOWQjOaXtuWFt+acieWuueaYk+S4juawtOOAgeS4juayueebuOS6kuS9nOeUqOeahOmDqOWIhu+8jOiDveWkn+W4ruWKqeayueWIhuaVo++8jOW5tumaj+awtOiiq+W4pui1sOOAglvnvo7lm73ljJblrabkvJrvvJrmsrnjgIHmsLTkuI7mtJfmtqTliYJdKGh0dHBzOi8vd3d3LmFjcy5vcmcvY29udGVudC9kYW0vYWNzb3JnL2VkdWNhdGlvbi9vdXRyZWFjaC9jZWxlYnJhdGluZy1jaGVtaXN0cnkvMjAwMi1uY3ctY2VsZWJyYXRpbmctY2hlbWlzdHJ5LWVuZ2xpc2gucGRmKQoKIyMjIDQuIOW/hemhu+WMuuWIhu+8mua6tuW+l+W/q++8jOS4juacgOe7iOiDvea6tuWkmuWwkQoK5pCF5ouM5Y+v5Lul6K6p57OW5pu05b+r5rq26Kej44CCCgrkvYblnKjnm7jlkIzmuKnluqbjgIHnm7jlkIzmsLTph4/kuIvvvIzmkIXmi4zpgJrluLjkuI3kvJrmlLnlj5jmnIDnu4jog73lpJ/murbop6PnmoTmnIDlpKfph4/jgIIKCuWJjeiAheaYryoq6YCf5bqmKirvvIzlkI7ogIXmtonlj4oqKua6tuino+W6pioq44CCCgrov5nkuKTkuKrpl67popjnu4/luLjooqvmt7fmt4bvvJoKCi0g4oCc5LiA5YiG6ZKf5YaF5rq26Kej5b6X5pu05aSa44CC4oCdCi0g4oCc5peg6K66562J5aSa5LmF77yM5pyA57uI6YO96IO95rq26Kej5b6X5pu05aSa44CC4oCdCgrlroPku6zkuI3mmK/lkIzkuIDkuKrnu5PorrrjgIIKCi0tLQoKIyMg56ys5LqU6K6y77ya5YyW5a2m5Y+N5bqU56m256uf5pS55Y+Y5LqG5LuA5LmI77yfCgrlhrDono3ljJbjgIHns5bmurbkuo7msLTvvIzkuI7pk4HnlJ/plIjmnInku4DkuYjkuI3lkIzvvJ8KCuWJjeS4pOenjeWPmOWMluS4re+8jOawtOWSjOezlueahOWMluWtpui6q+S7veayoeacieaUueWPmO+8m+mTgeeUn+mUiOWImeeUn+aIkOS6huaWsOeahOeJqei0qOOAggoKKirljJblrablj43lupTmtonlj4rljp/lrZDnmoTov57mjqXmlrnlvI/jgIHnlLXlrZDliIbluIPnrYnlj5HnlJ/mlLnlj5jvvIzku47ogIzlvaLmiJDkuI3lkIznmoTljJblrabniannp43jgIIqKgoKIyMjIDEuIOWOn+WtkOmHjeaWsOe7hOWQiO+8jOS4jeaYr+WHreepuuWHuueOsOaIlua2iOWksQoK55yL5LiA5Liq5Y+q55So5LqO55CG6Kej55qE5qih5Z6L77yaCgoqKjJI4oKCICsgT+KCgiDihpIgMkjigoJPKioKCuivu+aIkOS4reaWh++8mgoK5Lik5Liq5rCi5YiG5a2Q77yM5LiO5LiA5Liq5rCn5YiG5a2Q5Y+N5bqU77yM55Sf5oiQ5Lik5Liq5rC05YiG5a2Q44CCCgrmlbDkuIDmlbDvvJoKCi0g5bem6L655pyJ5Zub5Liq5rCi5Y6f5a2Q44CB5Lik5Liq5rCn5Y6f5a2Q44CCCi0g5Y+z6L655Lmf5pyJ5Zub5Liq5rCi5Y6f5a2Q44CB5Lik5Liq5rCn5Y6f5a2Q44CCCgrljp/lrZDnmoTnp43nsbvlkozmlbDph4/msqHmnInlj5jvvIznu4TlkIjmlrnlvI/lj5jkuobjgIIKCui/memHjOS4jeWuieaOkuawouawlOaIlueCueeBq+WunumqjOOAggoKIyMjIDIuIOS4uuS7gOS5iOS4jeiDvemaj+aEj+S/ruaUueWMluWtpuW8j+eahOWwj+aVsOWtl++8nwoK5oqKIEjigoJPIOaUueaIkCBI4oKCT+KCgu+8jOWwseS4jeWGjeaYr+WQjOS4gOenjeeJqei0qOOAggoK6ICM5oqKIEjigoJPIOWGmeaIkCAqKjJI4oKCTyoq77yM5Y+q5piv6KGo56S65Lik5Liq5rC05YiG5a2Q77yM5oiW55u45bqU5q+U5L6L55qE54mp6LSo55qE6YeP44CCCgrlj6/ku6XmiorlroPnkIbop6PkuLrvvJoKCi0gKirkuIvmoIcqKuivtOaYjuS4gOS4quaVtOS9k+eahOe7hOaIkOOAggotICoq5YmN6Z2i55qE57O75pWwKiror7TmmI7mnInlpJrlsJHku73ov5nmoLfnmoTmlbTkvZPjgIIKCumFjeW5s+aWueeoi+W8j++8jOacrOi0qOS4iuaYr+aguOWvueWOn+WtkOaVsOmHj++8jOS4jeaYr+eOqeaVsOWtl+a4uOaIj+OAglvnvo7lm73ljJblrabkvJrvvJrlj43lupTkuK3nmoTljp/lrZDkuI7otKjph4/lrojmgZJdKGh0dHBzOi8vd3d3LmFjcy5vcmcvbWlkZGxlc2Nob29sY2hlbWlzdHJ5L3NpbXVsYXRpb25zL2NoYXB0ZXI2L2xlc3NvbjIuaHRtbCkKCiMjIyAzLiDotKjph4/kuLrku4DkuYjmnInml7bnnIvotbfmnaXlh4/lsJHkuobvvJ8KCuWmguaenOWPjeW6lOS6p+eUn+eahOawlOS9k+i3keWIsOepuuawlOS4re+8jOWPquensOWuueWZqOmHjOeahOWJqeS9meeJqe+8jOi0qOmHj+W9k+eEtuWPr+iDveWHj+WwkeOAggoK5aaC5p6c5oqK5omA5pyJ6L+b5YWl5ZKM56a75byA55qE54mp6LSo6YO96K6h5YWl77yM5pmu6YCa5YyW5a2m5Y+N5bqU5ruh6Laz6LSo6YeP5a6I5oGS44CCCgrmiYDku6XvvIznoJTnqbbkuIDku7bkuovkuYvliY3vvIzlhYjor7TmuIXmpZrvvJoKCj4gKirmiJHku6zmiorlk6rkupvkuJzopb/nrpfov5vmnaXkuobvvJ/lk6rkupvkuJzopb/msqHmnInnrpfvvJ8qKgoKIyMjIOS4gOS4quWuueaYk+ivr+WIpOeahOWcsOaWuQoK5YaS5rOh44CB5Y+Y6Imy44CB5Y+R54Ot77yM6YO95Y+v5Lul5piv5YyW5a2m5Y+Y5YyW55qE57q/57Si77yM5L2G5LiN6IO95Y2V5Yet5YW25Lit5LiA6aG55LiL57uT6K6644CCCgrkvovlpoLvvIzmsLTmsrjohb7kvJrlhpLms6HvvIzljbTmsqHmnInlm6DmraTnlJ/miJDmlrDnmoTnianotKjjgIIKCi0tLQoKIyMg56ys5YWt6K6y77ya5YyW5a2m6YeM55qE5pWw6YeP4oCU4oCU5pGp5bCU5ZKM5rWT5bqm5Li65LuA5LmI5pyJ55So77yfCgrkvaDlj6/ku6XkuI3llpzmrKLorqHnrpfvvIzkvYbnkIbop6PigJzmlbDph4/lhbPns7vigJ3lvojmnInku7flgLzjgIIKCiMjIyAxLiDljJblrablj43lupTmjInnspLlrZDmlbDph4/phY3lkIjvvIzkuI3mmK/mjInnm7jlkIzph43ph4/phY3lkIgKCuS4gOS4quWkp+eQg+WSjOS4gOS4quWwj+eQg++8jOaVsOmHj+ebuOWQjO+8jOmHjemHj+S4jeWQjOOAggoK5YiG5a2Q5Lmf5piv5aaC5q2k44CCCgrliJrmiY3nmoTlj43lupTpnIDopoHkuKTkuKrmsKLliIblrZDphY3kuIDkuKrmsKfliIblrZDvvIzlubbkuI3mhI/lkbPnnYDpnIDopoHkuKTlhYvmsKLmsJTphY3kuIDlhYvmsKfmsJTjgIIKCumXrumimOaYr++8muWIhuWtkOWkquWwj++8jOaAjuS5iOaVsO+8nwoKIyMjIDIuIOaRqeWwlO+8muaKiuW3qOmHj+eykuWtkOaMieKAnOS7veKAneiuoeaVsAoK4oCc5LiA5omT4oCd6KGo56S65Y2B5LqM5Liq44CCCgrigJzkuIDmkanlsJTigJ3kuZ/ooajnpLrkuIDkuKrop4TlrprnmoTmlbDph4/vvIzlj6rkuI3ov4fnuqbkuLogKio2LjAyw5cxMMKywrMg5Liq5oyH5a6a57KS5a2QKirjgIIKCui/meS4quaVsOWtl+S4jeeUqOiDjOOAguS9oOWPqumcgOimgeeQhuino++8mgoKPiAqKuaRqeWwlOaKiuW+ruingueykuWtkOeahOaVsOmHj++8jOS4juWuj+inguS4iuiDveWkn+ensOmHj+eahOi0qOmHj+iBlOezu+i1t+adpeOAgioqCgrkvovlpoLvvIzpgJrov4fljp/lrZDph4/lj6/ku6Xnrpflh7rvvJoKCi0g5LiA5pGp5bCU5rC05YiG5a2Q55qE6LSo6YeP57qm5Li65Y2B5YWr5YWL44CCCi0g5Lik5pGp5bCU5rC05YiG5a2Q55qE6LSo6YeP57qm5Li65LiJ5Y2B5YWt5YWL44CCCgrlroPkuI3mmK/pop3lpJblj5HmmI7kuIDpgZPpmr7popjvvIzogIzmmK/kuLrkuobop6PlhrPigJzml6Dms5XkuIDkuKrkuKrmlbDliIblrZDigJ3nmoTlrp7pmYXlm7Dpmr7jgIIKCuesrOS4gOmBjeivu+WIsOi/memHjO+8jOeQhuino+eUqOmAlOWwseWkn+S6huOAggoKIyMjIDMuIOa1k+W6pu+8muW/hemhu+eci+a4healmuWIhuavjQoK5oqK5Y2B5YWL57OW5Yqg5YWl5Lmd5Y2B5YWL5rC05Lit77yM5b6X5Yiw5LiA55m+5YWL57OW5rC044CCCgrns5bnmoTotKjph4/liIbmlbDmmK/vvJoKCioqMTAg5YWLIMO3IDEwMCDlhYsgPSAxMCUqKgoK5aaC5p6c5oqK5Y2B5YWL57OW5Yqg5YWl5LiA55m+5YWL5rC05Lit77yM5b6X5Yiw55qE5piv5LiA55m+5LiA5Y2B5YWL57OW5rC077yM5bCx5LiN5pivIDEwJeOAggoK6L+Z57G76K6h566X5pyA6YeN6KaB55qE5LiN5piv5oqA5ben77yM6ICM5piv6Zeu5riF77yaCgo+IOKAnOeZvuWIhuS5i+WHoOKAne+8jOeptuern+aYr+WNoOiwgeeahOeZvuWIhuS5i+WHoO+8nwoKIyMjIDQuIOa1k+W6pu+8jOS4juaAu+mHj+aYr+S4pOWbnuS6iwoK5YGH6K6+6aWu5paZ5qCH562+5YaZ77yaCgrmr4/kuIDnmb7mr6vljYflkKvns5blhavlhYvjgIIKCuS4gOeTtuS6lOeZvuavq+WNh++8jOWFqOmDqOWWneWujOWwseaYr+Wbm+WNgeWFi+ezluOAggoK4oCc5q+P5LiA55m+5q+r5Y2H55yL6LW35p2l5LiN5aSa4oCd5ZKM4oCc5pW055O25oC76YeP5LiN5aSa4oCd77yM5LiN5piv5ZCM5LiA5Liq5Yik5pat44CCCgrmm7TkuIDoiKzlnLDor7TvvIzorqjorrrkuIDnp43nianotKjnmoTlvbHlk43vvIzopoHogIPomZHlroPmmK/ku4DkuYjjgIHmjqXop6blpJrlsJHjgIHpgJrov4fku4DkuYjpgJTlvoTjgIHmjIHnu63lpJrkuYXvvIzku6Xlj4rnjrDmnInor4Hmja7kuI7kuI3noa7lrprmgKfjgILkuI3og73lj6rnnIvlkI3lrZfvvIzkuZ/kuI3og73lj6rnnIvmmK/lkKbigJzmo4Dlh7rigJ3jgIJb576O5Zu9546v5L+d572y77ya6aOO6Zmp6K+E5Lyw55qE5Z+65pys57uE5oiQXShodHRwczovL3d3dy5lcGEuZ292L3Jpc2svY29uZHVjdGluZy1odW1hbi1oZWFsdGgtcmlzay1hc3Nlc3NtZW50KQoKLS0tCgojIyDnrKzkuIPorrLvvJrlj43lupTnmoTog73ph4/kuI7pgJ/luqbvvIzmmK/kuKTkuKrpl67popgKCuS4uuS7gOS5iOacieS6m+WPjeW6lOS8muaUvueDre+8jOWNtOS4jeS8mueri+WIu+WPkeeUn++8nwoK55CG6Kej6L+Z5Liq6Zeu6aKY77yM6ZyA6KaB5YiG5byA5Lik5Lu25LqL77yaCgoxLiDlj43lupTliY3lkI7vvIzog73ph4/mgI7moLflj5jljJbvvJ8KMi4g5Y+N5bqU6L+H56iL77yM6ZyA6KaB6Leo6L+H5LuA5LmI6Zqc56KN77yfCgojIyMgMS4g5omT5pat5YyW5a2m6ZSu6ZyA6KaB6IO96YeP77yM5b2i5oiQ5YyW5a2m6ZSu5Lya6YeK5pS+6IO96YePCgrluLjop4Hor6/op6PmmK/vvJoKCuKAnOeHg+aWmemHjOeahOWMluWtpumUruS4gOaWreW8gO+8jOWwseaKiuiDvemHj+aUvuWHuuadpeS6huOAguKAnQoK5pu05YeG56Gu55qE6K+05rOV5piv77yaCgotIOaWreW8gOaXp+mUrumcgOimgeWQuOaUtuiDvemHj+OAggotIOW9ouaIkOaWsOmUruS8mumHiuaUvuiDvemHj+OAggotIOavlOi+g+aVtOS4qui/h+eoi+eahOaUtuaUr++8jOaJjeiDveWIpOaWreWHgOaUvueDrei/mOaYr+WHgOWQuOeDreOAggoK54eD54On5pS+54Ot77yM5LiN5piv5Zug5Li64oCc5pat6ZSu5pys6Lqr5pS+54Ot4oCd77yM6ICM5piv5pW05Liq5Y+N5bqU6L+H56iL5pyJ5YeA6IO96YeP6YeK5pS+44CCCgojIyMgMi4g6IO95pS+54Ot77yM5LiN5Luj6KGo6ams5LiK5Y+N5bqUCgrlj43lupTov4fnqIvkuK3pgJrluLjlrZjlnKjkuIDkuKrpnIDopoHot6jotornmoTog73ph4/pmpznoo3vvIznp7DkuLoqKua0u+WMluiDvSoq44CCCgrnspfnlaXnsbvmr5TvvJrljbPkvb/nm67nmoTlnLDmr5Tlh7rlj5HngrnkvY7vvIzpgJTkuK3ku43lj6/og73lhYjopoHnv7vov4fkuIDpgZPlnaHjgIIKCui/meS4quexu+avlOWPquW4ruWKqeeQhuino+manOeije+8jOS4jeS7o+ihqOWIhuWtkOecn+eahOWcqOeIrOWxseOAggoKIyMjIDMuIOWCrOWMluWJguWBmuS6huS7gOS5iO+8nwoK5YKs5YyW5YmC5o+Q5L6b5Y+m5LiA5p2h5Y+N5bqU6YCU5b6E77yM5L2/5Y+N5bqU5pu05a655piT6L+b6KGM44CC5a6D5Y+C5LiO6L+H56iL77yM5bm25Zyo5a6M5pW055qE5YKs5YyW5b6q546v5Lit5YaN55Sf44CCCgrlroPkuI3mmK/pop3lpJbmj5Dkvpvml6DpmZDog73ph4/nmoTkuJzopb/vvIzkuZ/kuI3mmK/miorkuI3lj6/og73nmoTkuovmg4Xlj5jmiJDku7vkvZXmnaHku7bkuIvpg73lj6/og73jgIJbT3BlblN0YXjvvJrlgqzljJbkvZznlKhdKGh0dHBzOi8vb3BlbnN0YXgub3JnL2Jvb2tzL2NoZW1pc3RyeS0yZS9wYWdlcy8xMi03LWNhdGFseXNpcykKCiMjIyDov5nkuLrku4DkuYjlrp7nlKjvvJ8KCumBh+WIsOS4gOS4quWPjeW6lOaIluWkhOeQhui/h+eoi+S4jeeQhuaDs++8jOWPr+S7peWIhuWIq+mXru+8mgoKLSDmuKnluqbmmK/lkKblkIjpgILvvJ8KLSDlj4LkuI7lj43lupTnmoTnianotKjog73lkKblhYXliIbmjqXop6bvvJ8KLSDmmK/lkKbpnIDopoHmm7Tplb/ml7bpl7TvvJ8KLSDmmK/lkKblrZjlnKjlkIjpgILnmoTlgqzljJbpgJTlvoTvvJ8KCuS9huS4jeimgeaKiuWug+eugOWMluS4uuKAnOa4qeW6pui2iumrmOi2iuWlveKAneOAguabtOmrmOeahOa4qeW6puS5n+WPr+iDveW4puadpeS4jeW4jOacm+WPkeeUn+eahOWPjeW6lO+8jOaIluiAheaNn+Wdj+adkOaWmeOAggoKKirigJzog73lj5HnlJ/igJ3igJzlj5HnlJ/lvpflv6vigJ3igJzmlYjmnpzlpb3igJ3vvIzmmK/kuInkuKrkuI3lkIznmoTliKTmlq3jgIIqKgoKLS0tCgojIyDnrKzlhavorrLvvJrlubPooaHkuI3nrYnkuo7lgZzmraLigJTigJTkuLrku4DkuYjmsb3msLTkvJrot5HmsJTvvJ8KCuaJk+W8gOaxveawtO+8jOawlOazoeWHuueOsOOAggoK6L+Z5Lqb5rCU5L2T5LiN5piv5byA55O25pe25Yet56m655Sf5oiQ55qE44CC5Y6f5p2l5bey5pyJ5LqM5rCn5YyW56Kz5rq26Kej5Zyo5ray5L2T5Lit44CCCgojIyMgMS4g5b6u6KeC5LiK77yM5Lik5Liq5pa55ZCR5Y+v5Lul5ZCM5pe25Y+R55SfCgrlnKjlr4bpl63jgIHmnaHku7bnqLPlrprnmoTkvZPns7vkuK3vvJoKCi0g5pyJ5LqM5rCn5YyW56Kz5LuO5ray5L2T6L+b5YWl5LiK5pa55rCU5L2T44CCCi0g5Lmf5pyJ5LqM5rCn5YyW56Kz5LuO5rCU5L2T6L+b5YWl5ray5L2T44CCCgrlvZPkuKTkuKrmlrnlkJHnmoTpgJ/njofnm7jnrYnml7bvvIzlro/op4LkuIrnmoTph4/lj6/ku6Xkv53mjIHnqLPlrprjgIIKCui/meWPqyoq5Yqo5oCB5bmz6KGhKirjgIIKCuKAnOWKqOaAgeKAneeahOaEj+aAneaYr+i/h+eoi+S7jeeEtuWcqOWPkeeUn++8m+KAnOW5s+ihoeKAneeahOaEj+aAneaYr+S4pOS4quaWueWQkeeahOWPmOWMluebuOS6kuaKtea2iOOAggoKIyMjIDIuIOaUueWPmOadoeS7tu+8jOWOn+acieW5s+ihoeS8muaUueWPmAoK5byA55O25ZCO77yM5LiK5pa55LqM5rCn5YyW56Kz55qE5YiG5Y6L6ZmN5L2O77yM5Y6f5p2l6IO95aSf55WZ5Zyo5ray5L2T6YeM55qE6YOo5YiG5LqM5rCn5YyW56Kz6YC45Ye644CCCgrlr7nkuo7msb3msLTvvIzlnKjnm7jlkIzkuozmsKfljJbnorPliIbljovkuIvvvIzovoPkvY7muKnluqbpgJrluLjmnInliKnkuo7kv53nlZnmm7TlpJrmurbop6PnmoTkuozmsKfljJbnorPjgIJb576O5Zu95YyW5a2m5Lya77ya5rCU5L2T6IO95rq25LqO5rC05ZCXXShodHRwczovL3d3dy5hY3Mub3JnL21pZGRsZXNjaG9vbGNoZW1pc3RyeS9sZXNzb25wbGFucy9jaGFwdGVyNS9sZXNzb244Lmh0bWwpCgrmiYDku6XvvIzlj4rml7bnm5blpb3jgIHlhrfol4/vvIzmnInliqnkuo7lh4/lsJHnu6fnu63ot5HmsJTvvIzkvYbkuI3og73miorlt7Lnu4/mlaPlhaXlrqTlhoXnqbrmsJTnmoTkuozmsKfljJbnorPlhajpg6jmib7lm57mnaXjgIIKCiMjIyAzLiDljJblrablj43lupTkuZ/lj6/og73ovr7liLDliqjmgIHlubPooaEKCuS4gOS6m+WPjeW6lOiDveWkn+WQkeS4pOS4quaWueWQkei/m+ihjOOAguW5s+ihoeaXtu+8jOS4jeaYr+WPjeW6lOeJqeWSjOS6p+eJqeW/hemhu+S4gOagt+Wkmu+8jOiAjOaYr+ato+OAgemAhuWPjeW6lOmAn+eOh+ebuOetieOAggoK5YKs5YyW5YmC6IO95biu5Yqp5L2T57O75pu05b+r6L6+5Yiw5bmz6KGh77yM5Y205LiN5Lya5pS55Y+Y5ZCM5LiA5rip5bqm5LiL55qE5bmz6KGh5bi45pWw44CCW09wZW5TdGF477ya5bmz6KGh5LiO5YKs5YyW5YmCXShodHRwczovL29wZW5zdGF4Lm9yZy9ib29rcy9jaGVtaXN0cnktMmUvcGFnZXMvMTMtMy1zaGlmdGluZy1lcXVpbGlicmlhLWxlLWNoYXRlbGllcnMtcHJpbmNpcGxlKQoK6L+Z5YaN5qyh6K+05piO77yaCgo+ICoq5pS55Y+Y6YCf5bqm77yM5LiN5LiA5a6a5pS55Y+Y5pyA57uI57uT5p6c44CCKioKCi0tLQoKIyMg56ys5Lmd6K6y77ya6YW45ZKM56Kx4oCU4oCU5LiN5piv5Y2x6Zmp562J57qn77yM5Lmf5LiN5piv5YGl5bq36K+E5YiGCgrlhYjph4fnlKjkuIDkuKrpgILlkIjlhaXpl6jnmoTmqKHlnovvvJoKCi0gKirphbgqKuiDveWkn+aKiuawouemu+WtkCBI4oG6IOi9rOenu+e7meWFtuS7lueJqei0qOOAggotICoq56KxKirog73lpJ/mjqXlj5fmsKLnprvlrZDjgIIKCui/memHjOeahCBI4oG6IOWcqOawtOS4reS8muS4juawtOWIhuWtkOe7k+WQiO+8jOS4jeaYr+WtpOmbtumbtuWcsOa8guedgO+8m+WFpemXqOaXtuW4uOeUqCBI4oG6IOS9nOS4uueugOWGmeOAggoKIyMjIDEuIHBIIOihqOekuuS7gOS5iO+8nwoKcEgg5piv5o+P6L+w5rq25ray6YW456Kx5oCn55qE5LiA56eN5oyH5qCH44CCCgrlr7nkuo7mjqXov5EgMjXihIMg55qE5bi46KeB5rC05rq25ray77yaCgotIHBIIOWwj+S6jiA377yM5ZGI6YW45oCn44CCCi0gcEgg562J5LqOIDfvvIzlkYjkuK3mgKfjgIIKLSBwSCDlpKfkuo4gN++8jOWRiOeiseaAp+OAggoK5a6D5LiN5piv5pmu6YCa55qE562J5beu5Yi75bqm44CC5a+55LqO5bi46KeB56iA5rC05rq25ray77yMcEgg5q+P6ZmN5L2O5LiA77yM5rCi56a75a2Q5rWT5bqm5aSn57qm5aKe5Yqg5Y2B5YCN44CCW09wZW5TdGF477yacEhdKGh0dHBzOi8vb3BlbnN0YXgub3JnL2Jvb2tzL2NoZW1pc3RyeS0yZS9wYWdlcy8xNC0yLXBoLWFuZC1wb2gpCgrkuI3nlKjnjrDlnKjlrabkuaDlr7nmlbDorqHnrpfvvIzlhYjnn6XpgZPigJzlt67kuIDngrnngrnigJ3lj6/og73kuI3mmK/igJzlsI/lt67liKvigJ3jgIIKCiMjIyAyLiDigJzlvLrphbjigJ3igJzmtZPphbjigJ3igJxwSCDkvY7igJ3kuI3mmK/lkIzkuIDkuKrmhI/mgJ0KCi0gKirlvLrlvLEqKu+8muWcqOaMh+WumueOr+Wig+S4re+8jOmFuOi9rOenu+awouemu+WtkOeahOWAvuWQkeOAggotICoq5rWT56iAKirvvJrliqDlhaXkuoblpJrlsJHphbjvvIzljaDlpJrlpKfmr5TkvovjgIIKLSAqKnBIKirvvJrov5nku73lhbfkvZPmurbmtrLnmoTphbjnorHnirbmgIHjgIIKCuaJgOS7pe+8jOS4jeiDveaKiuKAnOW8semFuOKAneebtOaOpeeQhuino+aIkOKAnOS7u+S9lea1k+W6pumDveWuieWFqOKAneOAgltPcGVuU3RheO+8mumFuOeiseW8uuW8sV0oaHR0cHM6Ly9vcGVuc3RheC5vcmcvYm9va3MvY2hlbWlzdHJ5L3BhZ2VzLzE0LTMtcmVsYXRpdmUtc3RyZW5ndGhzLW9mLWFjaWRzLWFuZC1iYXNlcykKCiMjIyAzLiDkuLrku4DkuYjphovlkozlsI/oi4/miZPkvJrlhpLms6HvvJ8KCumGi+S4reeahOmGi+mFuOS4juWwj+iLj+aJk+WPjeW6lO+8jOeUn+aIkOS5memFuOmSoOOAgeawtOWSjOS6jOawp+WMlueis+OAguawlOazoeS4u+imgeadpeiHquS6jOawp+WMlueis+OAglvnvo7lm73ljJblrabkvJrvvJrphovkuI7lsI/oi4/miZPnmoTlj43lupRdKGh0dHBzOi8vd3d3LmFjcy5vcmcvbWlkZGxlc2Nob29sY2hlbWlzdHJ5L2xlc3NvbnBsYW5zL2NoYXB0ZXI2L2xlc3NvbjIuaHRtbCkKCueUseatpOWPr+S7peaOqOaWre+8muaKiuS4pOiAhemihOWFiOa3t+WcqOS4gOi1t++8jOS8mua2iOiAl+aOieS4gOmDqOWIhumFuOWSjOeise+8jOS4jeiDveS7heWHreKAnOazoeayq+W+iOeDremXueKAneWwseaWreWumua4hea0geiDveWKm+abtOW8uuOAggoK6L+Z5LiN5piv6K+05a6D5Lus5Zyo5omA5pyJ5oOF5aKD5LiL5q+r5peg5L2c55So77yM6ICM5piv77yaCgoqKuWPjeW6lOaYjuaYvu+8jOS4jui+vuaIkOa4hea0geebruagh++8jOS4jeaYr+WQjOS4gOS4quaMh+agh+OAgioqCgojIyMg5b+F6aG76K6w5L2P55qE5a6J5YWo6L6555WMCgrkuI3oh6rooYzmt7fnlKjmuIXmtIHliYLjgILlsKTlhbbkuI3opoHmiorlkKvmsK/mvILnmb3liYLkuI7phovjgIHphbjmgKfmtIHljpXliYLjgIHlkKvmsKjkuqflk4HmiJblhbbku5bmuIXmtIHmtojmr5Lkuqflk4Hmt7fnlKjvvIzlupTmjInmoIfnrb7mk43kvZzlubbkv53mjIHpgJrpo47jgIJb576O5Zu955a+5o6n5Lit5b+D77ya5ryC55m95YmC5L2/55So5a6J5YWoXShodHRwczovL3d3dy5jZGMuZ292L2h5Z2llbmUvYWJvdXQvY2xlYW5pbmctYW5kLWRpc2luZmVjdGluZy13aXRoLWJsZWFjaC5odG1sKQoK5YyW5a2m5Z+656GA6IO95biu5Yqp55CG6Kej6aOO6Zmp77yM5L2G5LiN6IO95pu/5Luj5Lqn5ZOB6K+05piO5Lmm44CCCgotLS0KCiMjIOesrOWNgeiusu+8muawp+WMlui/mOWOn+KAlOKAlOS7jueUn+mUiOWIsOeUteaxoAoK4oCc5rCn5YyW4oCd5a655piT6K6p5Lq65Lul5Li65LiA5a6a5pyJ5rCn5rCU5Y+C5LiO44CCCgrnjrDku6PljJblrabkuK3vvIzmm7TkuIDoiKznmoTlhaXpl6jnkIbop6PmmK/vvJoKCi0gKirlpLHljrvnlLXlrZDvvJrmsKfljJbjgIIqKgotICoq5b6X5Yiw55S15a2Q77ya6L+Y5Y6f44CCKioKCuS4pOiAheebuOS6kuWFs+iBlO+8muS4gOaWueWkseWOu+eahOeUteWtkO+8jOmcgOimgeiiq+WPpuS4gOaWueaOpeWPl+OAggoKIyMjIDEuIOmTgeS4uuS7gOS5iOeUn+mUiO+8nwoK5Zyo5bi46KeB5r2u5rm/546v5aKD5Lit77yM6ZOB6KGo6Z2i5Lya5Y+R55Sf55S15YyW5a2m6L+H56iL77yaCgotIOafkOS6m+S9jee9rueahOmTgeWkseWOu+eUteWtkOOAggotIOWPpuS4gOS6m+S9jee9ruWPkeeUn+aOpeWPl+eUteWtkOeahOWPjeW6lOOAggotIOWQjue7reWPmOWMluW9ouaIkOmTgemUiOOAggoK5pmu6YCa6ZOB6ZSI6YCa5bi45LiN6IO95YOP5a6M5pW05L+d5oqk6Iac6YKj5qC35Y+v6Z2g5Zyw5L+d5oqk5YaF6YOo6YeR5bGe77yM5Zug5q2k6IWQ6JqA5Y+v6IO957un57ut44CCCgrmtoLlsYLpmpTlvIDmsLTlkozmsKfjgIHkuI3plIjpkqLlvaLmiJDkv53miqTmgKfooajpnaLohpzvvIzpg73mmK/kuI3lkIznmoTpmLLmiqTmgJ3ot6/jgIJbT3BlblN0YXjvvJrohZDomoDkuI7pmLLmiqRdKGh0dHBzOi8vb3BlbnN0YXgub3JnL2Jvb2tzL2NoZW1pc3RyeS0yZS9wYWdlcy8xNy02LWNvcnJvc2lvbikKCiMjIyAyLiDnlLXmsaDkuI7mraTmnInku4DkuYjlhbPns7vvvJ8KCueUteaxoOaKiuawp+WMluOAgei/mOWOn+i/h+eoi+WuieaOkuWcqOS4jeWQjOeahOS9jee9ru+8jOW5tuiuqeeUteWtkOmAmui/h+WklumDqOeUtei3r+a1geWKqO+8jOS7juiAjOWQkeiuvuWkh+S+m+iDve+8m+WGhemDqOi/mOmcgOimgeemu+WtkOi/geenu+adpee7tOaMgeeUteiNt+W5s+ihoeOAggoK5omA5Lul77yM55S15rGg5LiN5piv566A5Y2V6KOF552A5LiA6KKL4oCc55S14oCd44CC5a6D5YyF5ZCr6IO95aSf6L+b6KGM6IO96YeP6L2s5o2i55qE5YyW5a2m5L2T57O744CCCgrlj6/lhYXnlLXnlLXmsaDlj6/ku6XlnKjlkIjpgILmnaHku7bkuIvvvIzliKnnlKjlpJbpg6jnlLXog73pqbHliqjnm7jlupTnmoTpgIblkJHov4fnqIvjgILkvYblubbkuI3mmK/miYDmnInnlLXmsaDpg73og73lronlhajlhYXnlLXvvIzkuZ/kuI3mmK/mr4/mrKHlj5jljJbpg73og73lrozlhajmgaLlpI3jgIIKCuS4jemAmui/h+aLhuino+OAgeefrei3r+OAgeWKoOeDreeUteaxoOadpemqjOivgei/meS6m+WOn+eQhuOAggoKIyMjIOi/meS4gOiusuW4puadpeeahOiBlOezuwoK55Sf6ZSI5LiO55S15rGg55yL6LW35p2l55u46Led5b6I6L+c77yM5Y206YO95raJ5Y+K55S15a2Q6L2s56e744CCCgrljJblrabln7rnoYDnmoTku7flgLzlsLHlnKjov5nph4zvvJoqKuS9oOS4jeWGjeWPquiDveiusOS9j+S4gOS4quS4quWtpOeri+eahOeOsOixoe+8jOiAjOiDveWPkeeOsOWug+S7rOWFseacieeahOacuuWItuOAgioqCgotLS0KCiMg5Lik5Liq5LiN6ZyA6KaB5YyW5a2m6K+V5YmC55qE5bCP6KeC5a+fCgrnm67nmoTkuI3mmK/lgZrlh7rmvILkuq7mlYjmnpzvvIzogIzmmK/nu4PkuaDvvJoqKuWFiOmihOa1i++8jOWGjeinguWvn++8jOacgOWQjumZkOWItue7k+iuuuOAgioqCgojIyDop4Llr5/kuIDvvJrmkIXmi4zliLDlupXmlLnlj5jkuobku4DkuYjvvJ8KCuWHhuWkh+S4pOS4quebuOWQjOadr+WtkO+8jOWIhuWIq+WKoOWFpeetiemHj+OAgeWQjOa4qeW6pueahOawtO+8jOWGjeaUvuWFpeetiemHj+OAgemil+eykuebuOi/keeahOeZveezluOAggoKLSDkuIDmna/mkIXmi4zjgIIKLSDkuIDmna/kuI3mkIXmi4zjgIIKLSDmr5TovoPns5bnspLmtojlpLHnmoTpgJ/luqbjgIIKCumAmuW4uOaQheaLjOeahOS4gOadr+abtOW/q+OAggoK5L2G6L+Z5Liq5a6e6aqM5Y+q6IO95pSv5oyB4oCc5pCF5ouM5pS55Y+Y5LqG5rq26Kej6YCf5bqm4oCd77yM5LiN6IO96K+B5piO4oCc5pCF5ouM5o+Q6auY5LqG5pyA57uI5rq26Kej5LiK6ZmQ4oCd44CCCgrlpoLmnpznu5PmnpzkuI3mmI7mmL7vvIzlhYjmo4Dmn6XmsLTph4/jgIHmuKnluqbjgIHns5bph4/mmK/lkKbkuIDoh7TvvIzkuI3lv4XlvLrov6vnjrDosaHnrKblkIjpooTmnJ/jgIIKCiMjIOinguWvn+S6jO+8muayueaYr+iiq+a2iOeBreS6hu+8jOi/mOaYr+iiq+WIhuaVo+S6hu+8nwoK5Lik5Liq6YCP5piO5p2v5a2Q6YeM5YiG5Yir5Yqg5YWl57qm5LqU5Y2B5q+r5Y2H5rC05ZKM5Yeg5ru06aOf55So5rK544CCCgotIOS4gOadr+S4jeWKoOWFtuS7luS4nOilv+OAggotIOWPpuS4gOadr+WKoOWFpeS4gOa7tOaZrumAmuaJi+a0l+mkkOWFt+eUqOa0l+a0geeyvuOAggotIOeUqOebuOi/keaWueW8j+i9u+i9u+aQheaLjO+8jOmdmee9ruavlOi+g+OAggoK5Yqg5rSX5rSB57K+55qE5LiA5p2v6YCa5bi45pu05a655piT5b2i5oiQ57uG5bCP5rK55ru077yM5YiG5bGC5Lmf5Y+v6IO95Y+Y5oWi77yM5L2G5pyq5b+F5rC45LmF56iz5a6a44CCCgrov5nkuKrop4Llr5/kuI3og73or4HmmI7igJzmsrnooqvljJblrabliIbop6PkuobigJ3jgILmm7TlkIjnkIbnmoTop6Pph4rmmK/vvIzlroPooqvliIbmlaPmiJDkuobmm7TlsI/nmoTpg6jliIbjgIIKCioq5Lik6aG56KeC5a+f6YO95LiN5ZOB5bCd6K+V6aqM5ray77yM5LiN5re35YWl5YW25LuW5riF5rSB5YmC77yM6YG/5YWN5rqF55y877yM57uT5p2f5ZCO5riF5rSX5Zmo5YW35ZKM5Y+M5omL44CCKioKCi0tLQoKIyDmgI7moLfnn6XpgZPoh6rlt7HnnJ/nmoTlvIDlp4vnkIbop6PkuobvvJ8KCuS4jeiAg+WQjeivjeiDjOivteOAguivleedgOino+mHiuS4i+mdouS6lOS7tuS6i++8mgoKfCDpl67popggfCDnkIbop6PopoHngrkgfAp8LS0tfC0tLXwKfCDng6flvIDmsLTkuLrku4DkuYjkuI3mmK/lnKjliLbpgKDmsKLmsJTlkozmsKfmsJTvvJ8gfCDkuLvopoHmlLnlj5jliIblrZDpl7TnmoTogZrpm4bnirbmgIHvvIzmsqHmnInmi4blvIDmsLTliIblrZDkuK3nmoTljJblrabplK7jgIIgfAp8IOezluawtOmAj+aYju+8jOS4uuS7gOS5iOS4jeS7o+ihqOezluS4jeWtmOWcqO+8nyB8IOezluS7peWIhuWtkOWwuuW6puWIhuaVo++8jOiCieecvOeci+S4jeWIsOOAgiB8Cnwg5Lik56eN5Lqn5ZOB5ZCr5ZCM5LiA56eN5YWD57Sg77yM5oCn6LSo5Li65LuA5LmI5Y+v6IO95LiN5ZCM77yfIHwg5YWD57Sg55u45ZCM77yM5LiN5Luj6KGo5YyW5a2m5b2i5oCB44CB57uT5p6E44CB5rWT5bqm55u45ZCM44CCIHwKfCDlj43lupTliqDlv6vvvIzkuLrku4DkuYjkuI3kuIDlrprlvpfliLDmm7TlpJrmnIDnu4jkuqfnianvvJ8gfCDpgJ/luqbkuI7lubPooaHnu5PmnpzmmK/kuI3lkIzpl67popjjgIIgfAp8IOa4hea0geaXtuaxoea4jeKAnOa2iOWkseKAneS6hu+8jOi/mOW6lOivpei/vemXruS7gOS5iO+8nyB8IOWug+i/m+WFpeS6huawtOOAgeepuuawlOOAgeaKueW4g++8jOi/mOaYr+i9rOWMluaIkOS6huWFtuS7lueJqei0qO+8nyB8Cgrog73nlKjoh6rlt7HnmoTor53or7Tlh7rlpKfmhI/vvIzmr5TlpI3ov7DmoIflh4bnrZTmoYjmm7Tph43opoHjgIIKCi0tLQoKIyDlrablrozov5nkupvln7rnoYDvvIzkuIvkuIDmraXlrabku4DkuYjvvJ8KCuS4jeW/hemprOS4iui/m+WFpeabtOmavueahOmimOebruOAguWPr+S7pemAieS4gOS4quS9oOecn+ato+WcqOaEj+eahOaWueWQke+8mgoKLSAqKumjn+WTgeS4jueDuemlqioq77ya6JuL55m96LSo55qE5b2i54q244CB5reA57KJ44CB5Lmz5YyW44CB6KSQ5Y+Y5ZKM5Y+R6YW144CCCi0gKirmnZDmlpkqKu+8mumHkeWxnuOAgeeOu+eSg+OAgemZtueTt+OAgeWhkeaWmeS4uuS7gOS5iOacieS4jeWQjOaAp+iDveOAggotICoq6IO95rqQKirvvJrnh4Png6fjgIHnlLXmsaDjgIHlgqjog73vvIzku6Xlj4rog73ph4/ovazmjaLnmoTpmZDliLbjgIIKLSAqKueOr+Wigyoq77ya5YiG56a75LiO5YiG6Kej5pyJ5LuA5LmI5Yy65Yir77yM5rGh5p+T54mp5pyA57uI5Y675LqG5ZOq6YeM44CCCgrkvovlpoLvvIzloZHmlpnluLjmtonlj4rplb/pk77nirbnmoTpq5jliIblrZDvvJvpk77nmoTnu5PmnoTjgIHmjpLliJflkozov57mjqXmlrnlvI/vvIzkvJrlvbHlk43mnZDmlpnmgKfog73jgILov5nmmK/lnKjnu6fnu63kvb/nlKjnrKzkuInorrLnmoTigJznu5PmnoTlvbHlk43mgKfotKjigJ3vvIzogIzkuI3mmK/lj6blrabkuIDlpZfmr6vkuI3nm7jlhbPnmoTnn6Xor4bjgIJb576O5Zu95YyW5a2m5Lya77ya6auY5YiG5a2Q5LiO5aGR5paZXShodHRwczovL3d3dy5hY3Mub3JnL2VkdWNhdGlvbi9yZXNvdXJjZXMvdW5kZXJncmFkdWF0ZS9jaGVtaXN0cnlpbmNvbnRleHQvaW50ZXJhY3RpdmVzL3dvcmxkLW9mLXBvbHltZXJzLWFuZC1wbGFzdGljcy5odG1sKQoK5YaN5aaC77yM55yL5Yiw4oCc5Y+v6ZmN6Kej4oCd5LiJ5Liq5a2X77yM5Y+v5Lul6L+96Zeu77ya5Zyo5LuA5LmI546v5aKD44CB57uP6L+H5aSa5LmF44CB5YiG6Kej5Yiw5LuA5LmI56iL5bqm77yf5bel5Lia5aCG6IKl5p2h5Lu25LiL6IO96ZmN6Kej77yM5LiN5Luj6KGo5omU6L+b5rW36YeM5Lmf5Lya6L+F6YCf5raI5aSx44CCW+iBlOWQiOWbveeOr+Wig+inhOWIkue9su+8muWhkeaWmemZjeino+S4juWkhOeQhuadoeS7tl0oaHR0cHM6Ly93ZWRvY3MudW5lcC5vcmcvYml0c3RyZWFtL2hhbmRsZS8yMC41MDAuMTE4MjIvNDIyNzcvUGxhc3RpY19wb2xsdXRpb24ucGRmP3NlcXVlbmNlPTMpCgoqKuS9oOeOsOWcqOS4jemcgOimgeefpemBk+aJgOacieetlOahiOOAguWFiOWtpuS8muaKiumXrumimOmXruWFt+S9k++8muaYr+S7gOS5iOeJqei0qOOAgeS7gOS5iOe7k+aehOOAgeWkmuWwkeaVsOmHj+OAgeS7gOS5iOadoeS7tuOAgeWPmOaIkOS6huS7gOS5iOOAgeivgeaNruaYr+S7gOS5iOOAgioqCgrov5nlsLHmmK/kuIDlpZfog73lpJ/nu6fnu63nlJ/plb/nmoTljJblrabln7rnoYDjgIIK" download="化学入门教程.md">下载原始 Markdown <span aria-hidden="true">↗</span></a><a href="#top">回到课程开头 <span aria-hidden="true">↑</span></a></div>
+        <p class="footer-bottom">化学，从好奇开始 <span>本地静态课程 · 正文可离线阅读 · 参考链接联网访问</span></p>
+      </footer>
+    </main>
+  </div>
+  <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
+  <script>(() => {
+  'use strict';
+  document.documentElement.classList.remove('no-js');
+  const storageKey = 'chemistry.lesson01.v1';
+  const chapters = [...document.querySelectorAll('[data-chapter]')];
+  const chapterIds = chapters.map(section => section.id);
+  const validIds = new Set(chapterIds);
+  const sections = [...document.querySelectorAll('.lesson-section')];
+  const tocLinks = [...document.querySelectorAll('.toc-link')];
+  const statuses = [...document.querySelectorAll('[data-storage-status]')];
+  let state = { complete: [], size: 18, last: null };
+  let storageAvailable = true;
+
+  function storageFallback() {
+    storageAvailable = false;
+    statuses.forEach(status => { status.textContent = '当前浏览器无法保存；进度仅在本次打开时有效。'; });
+  }
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
+    if (saved && typeof saved === 'object') {
+      state.complete = [...new Set(Array.isArray(saved.complete) ? saved.complete.filter(id => validIds.has(id)) : [])];
+      state.size = [18, 20, 22, 24].includes(saved.size) ? saved.size : 18;
+      state.last = validIds.has(saved.last) ? saved.last : null;
+    }
+    localStorage.setItem(storageKey, JSON.stringify(state));
+  } catch (_) { storageFallback(); }
+
+  function save() {
+    if (!storageAvailable) return;
+    try { localStorage.setItem(storageKey, JSON.stringify(state)); }
+    catch (_) { storageFallback(); }
+  }
+  function announce(message) { document.getElementById('announcement').textContent = message; }
+  function renderProgress() {
+    document.querySelectorAll('[data-completion-count]').forEach(el => { el.textContent = `${state.complete.length} / 10`; });
+    document.querySelectorAll('.completion-bar').forEach(el => { el.value = state.complete.length; });
+    document.querySelectorAll('[data-complete]').forEach(button => {
+      const done = state.complete.includes(button.dataset.complete);
+      button.setAttribute('aria-pressed', String(done));
+      const number = Number(button.dataset.complete.slice(-2));
+      button.setAttribute('aria-label', done ? `取消第 ${number} 小节的完成标记` : `标记第 ${number} 小节已完成`);
+      button.querySelector('.button-label').textContent = done ? '已完成 · 点击取消' : '标记本节已完成';
+      button.querySelector('.check-box').textContent = done ? '✓' : '';
+    });
+    tocLinks.forEach(link => {
+      const done = state.complete.includes(link.hash.slice(1));
+      link.classList.toggle('is-complete', done);
+      const text = link.dataset.label;
+      link.setAttribute('aria-label', text + (done ? '，已完成' : ''));
+    });
+    if (storageAvailable) statuses.forEach(status => {
+      status.textContent = state.complete.length === 10
+        ? '十个小节均已标记完成。可以继续做观察和自测。'
+        : '进度仅保存在当前浏览器，不会上传。';
+    });
+  }
+  function renderSize() {
+    document.documentElement.style.setProperty('--body-size', `${state.size}px`);
+    document.getElementById('font-value').textContent = String(state.size);
+    document.getElementById('font-minus').disabled = state.size <= 18;
+    document.getElementById('font-plus').disabled = state.size >= 24;
+  }
+  document.querySelectorAll('[data-complete]').forEach(button => {
+    button.addEventListener('click', () => {
+      const id = button.dataset.complete;
+      if (state.complete.includes(id)) state.complete = state.complete.filter(value => value !== id);
+      else state.complete.push(id);
+      renderProgress(); save();
+      announce(`已标记完成 ${state.complete.length} 个小节，共 10 个。`);
+    });
+  });
+  [-1, 1].forEach(direction => {
+    document.getElementById(direction === -1 ? 'font-minus' : 'font-plus').addEventListener('click', () => {
+      state.size = Math.max(18, Math.min(24, state.size + direction * 2));
+      renderSize(); save(); updatePosition();
+    });
+  });
+  if (state.last && state.last !== 'chapter-01') {
+    const start = document.getElementById('start-link');
+    start.href = `#${state.last}`;
+    const number = Number(state.last.slice(-2));
+    start.replaceChildren(document.createTextNode(`继续阅读第 ${number} 小节 `));
+    const arrow = document.createElement('span');
+    arrow.setAttribute('aria-hidden', 'true'); arrow.textContent = '↗'; start.append(arrow);
+  }
+  renderProgress(); renderSize();
+
+  let queued = false;
+  let saveTimer;
+  let activeId = '';
+  function updatePosition() {
+    queued = false;
+    const maxScroll = document.documentElement.scrollHeight - innerHeight;
+    const ratio = maxScroll > 0 ? Math.min(1, Math.max(0, scrollY / maxScroll)) : 0;
+    document.getElementById('scroll-progress').style.width = `${ratio * 100}%`;
+    let nextActive = '';
+    const trigger = Math.min(210, innerHeight * .3);
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= trigger) nextActive = section.id;
+      else break;
+    }
+    if (!nextActive || nextActive === activeId) return;
+    activeId = nextActive;
+    tocLinks.forEach(link => {
+      if (link.hash === `#${activeId}`) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+    if (validIds.has(activeId)) {
+      state.last = activeId;
+      clearTimeout(saveTimer); saveTimer = setTimeout(save, 450);
+    }
+  }
+  window.addEventListener('scroll', () => {
+    if (!queued) { queued = true; requestAnimationFrame(updatePosition); }
+  }, { passive: true });
+  window.addEventListener('resize', updatePosition);
+  window.addEventListener('pagehide', save);
+  const mobileToc = document.getElementById('mobile-toc');
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', event => {
+      const target = document.getElementById(link.hash.slice(1));
+      if (!target) return;
+      if (mobileToc.contains(link)) {
+        event.preventDefault();
+        mobileToc.open = false;
+        requestAnimationFrame(() => {
+          target.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+          try { history.replaceState(null, '', link.hash); } catch (_) { /* file URLs may restrict history */ }
+          const heading = target.querySelector('h2');
+          if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
+        });
+      }
+    });
+  });
+
+  let printOpenState = null;
+  window.addEventListener('beforeprint', () => {
+    if (printOpenState) return;
+    printOpenState = [...document.querySelectorAll('.answer')].map(el => [el, el.open]);
+    printOpenState.forEach(([el]) => { el.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    if (!printOpenState) return;
+    printOpenState.forEach(([el, open]) => { el.open = open; }); printOpenState = null;
+  });
+  document.getElementById('print-page').addEventListener('click', () => window.print());
+  updatePosition();
+})();
+</script>
+</body>
+</html>

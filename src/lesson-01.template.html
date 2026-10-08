@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="写给成年初学者的化学第一课。从物质、原子和化学键，到反应、能量与平衡。不背口诀，先理解世界。">
+  <meta name="color-scheme" content="light">
+  <title>第一课 · 认识物质与变化｜化学，从好奇开始</title>
+  <style>@@CSS@@</style>
+</head>
+<body>
+  <a class="skip-link" href="#course">跳到课程正文</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="化学，从好奇开始，返回课程开头">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>化学<span class="brand-divider"> / </span><span class="brand-sub">从好奇开始</span></span>
+    </a>
+    <div class="header-center">成人入门课程 <span>·</span> 第一课</div>
+    <div class="header-tools">
+      <div class="font-tools js-only" role="group" aria-label="正文字号">
+        <button type="button" id="font-minus" aria-label="减小正文字号" title="减小正文字号">A−</button>
+        <span id="font-value" aria-live="polite">18</span>
+        <button type="button" id="font-plus" aria-label="增大正文字号" title="增大正文字号">A+</button>
+      </div>
+      <button type="button" class="print-button js-only" id="print-page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7z"/><path d="M16 11h1"/></svg><span>打印课程</span></button>
+    </div>
+    <div class="scroll-track" aria-hidden="true"><span id="scroll-progress"></span></div>
+  </header>
+
+  <div class="book-layout" id="top">
+    <aside class="sidebar" aria-label="课程导航">
+      <div class="sidebar-inner">
+        <a class="course-series" href="#top"><span class="series-number">01</span><span>第一课<span class="series-sub">认识物质与变化</span></span></a>
+        <div class="completion js-only"><div><span>本课学习进度</span><strong data-completion-count>0 / 10</strong></div><progress class="completion-bar" max="10" value="0" aria-label="已标记完成的小节数"></progress></div>
+        <nav aria-label="本课目录" class="toc">@@TOC@@</nav>
+        <div class="sidebar-note"><span class="tiny-mark" aria-hidden="true">↗</span><p>不必一次读完。<br>理解一个问题，就向前一步。</p></div>
+        <p class="save-status js-only" id="storage-status" data-storage-status>进度仅保存在当前浏览器，不会上传。</p>
+      </div>
+    </aside>
+
+    <main id="course">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> 第一课 · 化学基础</p>
+          <h1 id="hero-title">重新认识<br>物质的世界<span class="title-dot">。</span></h1>
+          <p class="hero-subtitle">从“物质是什么”，<br class="small-break">到“变化为什么发生”。</p>
+          <p class="hero-description">写给有好奇心、但基础薄弱的成年人。<br>不急着记住答案，先试着理解原因。</p>
+          <a class="primary-link" href="#chapter-01" id="start-link">开始第一小节 <span aria-hidden="true">↗</span></a>
+          <div class="hero-meta"><span>10 个基础小节</span><i></i><span>2 个生活观察</span><i></i><span>5 道理解自测</span></div>
+        </div>
+        <figure class="hero-figure">
+          <div class="figure-top"><span>微观视角 / 001</span><span class="figure-cross" aria-hidden="true">＋</span></div>
+          <svg class="water-model" viewBox="0 0 380 300" role="img" aria-labelledby="water-title water-desc">
+            <title id="water-title">一个水分子的组成</title>
+            <desc id="water-desc">一个氧原子与两个氢原子通过化学键连接，形成水分子。示意图不按实际比例。</desc>
+            <defs><pattern id="dot-grid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#c4c5b9"/></pattern></defs>
+            <rect width="380" height="300" fill="url(#dot-grid)"/>
+            <circle cx="190" cy="152" r="116" fill="none" stroke="#cbcfc2" stroke-dasharray="3 6"/>
+            <path d="M190 120 98 190M190 120 282 190" fill="none" stroke="#b9b7a6" stroke-width="15" stroke-linecap="round"/>
+            <path d="M190 120 98 190M190 120 282 190" fill="none" stroke="#e0ddce" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="190" cy="120" r="51" fill="#ad513a"/><circle cx="190" cy="120" r="43" fill="none" stroke="#c87560"/>
+            <circle cx="98" cy="190" r="32" fill="#fbf9ee" stroke="#416054" stroke-width="1.5"/>
+            <circle cx="282" cy="190" r="32" fill="#fbf9ee" stroke="#416054" stroke-width="1.5"/>
+            <text x="190" y="133" text-anchor="middle" font-family="Georgia,serif" font-size="40" fill="#fffaf0">O</text>
+            <text x="98" y="200" text-anchor="middle" font-family="Georgia,serif" font-size="29" fill="#284c40">H</text>
+            <text x="282" y="200" text-anchor="middle" font-family="Georgia,serif" font-size="29" fill="#284c40">H</text>
+            <path d="M245 98h59" stroke="#8c9487"/><text x="306" y="102" font-size="12" fill="#59675d">氧</text>
+            <path d="M66 207 45 228H24" fill="none" stroke="#8c9487"/><text x="27" y="247" font-size="12" fill="#59675d">氢</text>
+            <text x="190" y="273" text-anchor="middle" font-family="Georgia,serif" font-size="22" letter-spacing="2" fill="#284c40">H₂O</text>
+          </svg>
+          <figcaption><strong>平常的一滴水，也有微观的秩序。</strong><span>2 个氢原子 + 1 个氧原子 · 结构示意，不按比例</span></figcaption>
+        </figure>
+      </section>
+
+      <details class="mobile-toc" id="mobile-toc"><summary><span>本课目录 <small>10 个小节 + 观察与自测<span class="js-only"> · 已完成 <b data-completion-count>0 / 10</b></span></small></span><span aria-hidden="true">＋</span></summary><nav aria-label="移动端本课目录">@@TOC@@</nav><p class="mobile-save-note js-only" data-storage-status>进度仅保存在当前浏览器，不会上传。</p></details>
+
+      <section class="orientation" id="outline" aria-labelledby="outline-title">
+        <div class="orientation-heading"><p class="eyebrow">本课路线</p><h2 id="outline-title">先搭起框架，再看懂现象。</h2><p>原教程的十讲，收录为第一课的十个小节。<br>按顺序阅读，也可以从目录回到感兴趣的问题。</p></div>
+        <ol class="learning-route">
+          <li><span>01—03</span><strong>它是什么</strong><small>物质 → 粒子 → 结构</small></li>
+          <li><span>04—06</span><strong>它怎样变化</strong><small>状态 → 反应 → 数量</small></li>
+          <li><span>07—10</span><strong>为什么会这样</strong><small>能量 → 平衡 → 反应类型</small></li>
+        </ol>
+      </section>
+
+      <noscript><p class="noscript-notice">当前未开启 JavaScript。全部课程、目录和自测解析仍可阅读；进度记录和字号按钮不可用。打印可使用浏览器菜单。</p></noscript>
+      @@INTRO@@
+      @@CHAPTERS@@
+      @@SUPPLEMENTS@@
+
+      <footer class="course-footer">
+        <div><span class="footer-kicker">第一课 · 读到这里</span><h2>带着一个更好的问题，<br>回到日常生活。</h2><p>不必记住所有名词。下次遇到一个现象，<br>试着问：它是什么，在什么条件下，变成了什么？</p></div>
+        <div class="footer-actions"><a href="@@MARKDOWN_DATA@@" download="化学入门教程.md">下载原始 Markdown <span aria-hidden="true">↗</span></a><a href="#top">回到课程开头 <span aria-hidden="true">↑</span></a></div>
+        <p class="footer-bottom">化学，从好奇开始 <span>本地静态课程 · 正文可离线阅读 · 参考链接联网访问</span></p>
+      </footer>
+    </main>
+  </div>
+  <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
+  <script>@@JS@@</script>
+</body>
+</html>
